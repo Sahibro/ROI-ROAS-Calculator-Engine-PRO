@@ -1,145 +1,106 @@
 {
-  "name": "Marketing Analytics Calculator Pro",
-  "short_name": "Marketing Calc",
-  "description": "Professional marketing calculator for ROI, ROAS, CPA, CPM, CTR, Break-even Analysis, and Profit Margin with real-time charts and reports.",
+  "name": "MarketIQ Pro — Marketing Calculator Suite",
+  "short_name": "MarketIQ Pro",
+  "description": "Calculate ROI, ROAS, CPA, CPM, CTR, Break-even & Profit Margin — All in One Premium Marketing Analytics Tool.",
   "version": "1.0.0",
-  "manifest_version": 3,
-  "start_url": "/",
+  "start_url": "./index.html",
+  "scope": "./",
   "display": "standalone",
-  "background_color": "#ffffff",
-  "theme_color": "#6366F1",
-  "orientation": "any",
-  "scope": "/",
-  "lang": "en-US",
+  "orientation": "portrait-primary",
+  "theme_color": "#6C63FF",
+  "background_color": "#0A0A0F",
+  "lang": "en",
   "dir": "ltr",
-  "categories": [
-    "business",
-    "finance",
-    "productivity",
-    "utilities"
-  ],
+  "categories": ["business", "finance", "productivity"],
   "icons": [
     {
-      "src": "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 192 192'><rect width='192' height='192' fill='%236366F1'/><text x='96' y='120' font-size='100' text-anchor='middle' fill='white'>📊</text></svg>",
-      "sizes": "192x192",
-      "type": "image/svg+xml",
-      "purpose": "any"
+      "src": "icons/icon-72x72.png",
+      "sizes": "72x72",
+      "type": "image/png",
+      "purpose": "maskable any"
     },
     {
-      "src": "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'><rect width='512' height='512' fill='%236366F1'/><text x='256' y='320' font-size='280' text-anchor='middle' fill='white'>📊</text></svg>",
+      "src": "icons/icon-96x96.png",
+      "sizes": "96x96",
+      "type": "image/png",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "icons/icon-128x128.png",
+      "sizes": "128x128",
+      "type": "image/png",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "icons/icon-144x144.png",
+      "sizes": "144x144",
+      "type": "image/png",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "icons/icon-152x152.png",
+      "sizes": "152x152",
+      "type": "image/png",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "icons/icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "icons/icon-384x384.png",
+      "sizes": "384x384",
+      "type": "image/png",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "icons/icon-512x512.png",
       "sizes": "512x512",
-      "type": "image/svg+xml",
-      "purpose": "any"
-    },
-    {
-      "src": "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 192 192'><rect width='192' height='192' fill='%236366F1'/><text x='96' y='120' font-size='100' text-anchor='middle' fill='white'>📊</text></svg>",
-      "sizes": "192x192",
-      "type": "image/svg+xml",
-      "purpose": "maskable"
+      "type": "image/png",
+      "purpose": "maskable any"
     }
   ],
   "screenshots": [
     {
-      "src": "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1280 720'><rect width='1280' height='720' fill='%23f9fafb'/><text x='640' y='360' font-size='48' text-anchor='middle' fill='%236366F1'>Marketing Calculator Pro - Desktop View</text></svg>",
-      "sizes": "1280x720",
-      "type": "image/svg+xml",
+      "src": "screenshots/desktop.png",
+      "sizes": "1280x800",
+      "type": "image/png",
       "form_factor": "wide",
-      "label": "Desktop homepage showing all calculators"
+      "label": "MarketIQ Pro Desktop View"
     },
     {
-      "src": "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 1136'><rect width='640' height='1136' fill='%23f9fafb'/><text x='320' y='568' font-size='36' text-anchor='middle' fill='%236366F1'>Marketing Calculator Pro - Mobile View</text></svg>",
-      "sizes": "640x1136",
-      "type": "image/svg+xml",
+      "src": "screenshots/mobile.png",
+      "sizes": "390x844",
+      "type": "image/png",
       "form_factor": "narrow",
-      "label": "Mobile homepage with responsive design"
+      "label": "MarketIQ Pro Mobile View"
     }
   ],
   "shortcuts": [
     {
       "name": "ROI Calculator",
       "short_name": "ROI",
-      "description": "Calculate Return on Investment",
-      "url": "/#roiCalculator",
-      "icons": [
-        {
-          "src": "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 96 96'><rect width='96' height='96' fill='%2310B981'/><text x='48' y='60' font-size='50' text-anchor='middle' fill='white'>%</text></svg>",
-          "sizes": "96x96",
-          "type": "image/svg+xml"
-        }
-      ]
+      "description": "Open the ROI Calculator",
+      "url": "./index.html#calculators",
+      "icons": [{ "src": "icons/icon-96x96.png", "sizes": "96x96" }]
     },
     {
       "name": "ROAS Calculator",
       "short_name": "ROAS",
-      "description": "Calculate Return on Ad Spend",
-      "url": "/#roasCalculator",
-      "icons": [
-        {
-          "src": "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 96 96'><rect width='96' height='96' fill='%233B82F6'/><text x='48' y='60' font-size='50' text-anchor='middle' fill='white'>📈</text></svg>",
-          "sizes": "96x96",
-          "type": "image/svg+xml"
-        }
-      ]
+      "description": "Open the ROAS Calculator",
+      "url": "./index.html#calculators",
+      "icons": [{ "src": "icons/icon-96x96.png", "sizes": "96x96" }]
     },
     {
-      "name": "Analytics Dashboard",
-      "short_name": "Dashboard",
-      "description": "View analytics dashboard",
-      "url": "/#charts",
-      "icons": [
-        {
-          "src": "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 96 96'><rect width='96' height='96' fill='%238B5CF6'/><text x='48' y='60' font-size='50' text-anchor='middle' fill='white'>📊</text></svg>",
-          "sizes": "96x96",
-          "type": "image/svg+xml"
-        }
-      ]
+      "name": "Profit Margin Calculator",
+      "short_name": "Margin",
+      "description": "Open the Profit Margin Calculator",
+      "url": "./index.html#calculators",
+      "icons": [{ "src": "icons/icon-96x96.png", "sizes": "96x96" }]
     }
   ],
   "related_applications": [],
-  "prefer_related_applications": false,
-  "share_target": {
-    "action": "/",
-    "method": "GET",
-    "enctype": "application/x-www-form-urlencoded",
-    "params": {
-      "title": "title",
-      "text": "text",
-      "url": "url"
-    }
-  },
-  "features": [
-    "Cross Platform",
-    "Offline Capable",
-    "Installable",
-    "Secure",
-    "Fast",
-    "Responsive"
-  ],
-  "edge_side_panel": {
-    "preferred_width": 480
-  },
-  "display_override": [
-    "window-controls-overlay",
-    "standalone",
-    "minimal-ui",
-    "browser"
-  ],
-  "protocol_handlers": [
-    {
-      "protocol": "web+marketingcalc",
-      "url": "/?calc=%s"
-    }
-  ],
-  "file_handlers": [
-    {
-      "action": "/",
-      "accept": {
-        "text/csv": [".csv"],
-        "application/vnd.ms-excel": [".xls", ".xlsx"]
-      }
-    }
-  ],
-  "launch_handler": {
-    "client_mode": "focus-existing"
-  }
+  "prefer_related_applications": false
 }
