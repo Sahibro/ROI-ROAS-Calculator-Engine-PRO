@@ -585,16 +585,15 @@ const initTooltips = () => {
 
 let pendingModalAction = null;
 
-/**
- * Open the clear-all confirmation modal
- * @param {Function} onConfirm
- */
 const openModal = (onConfirm) => {
   const modal = $('modal-clear');
   if (!modal) return;
   pendingModalAction = onConfirm;
+  
+  /* BUG FIX: यहाँ Modal को ज़बरदस्ती show कर रहे हैं */
   modal.hidden = false;
   modal.removeAttribute('hidden');
+  modal.style.display = 'flex'; 
 
   const firstFocusable = modal.querySelector('button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])');
   if (firstFocusable) firstFocusable.focus();
@@ -602,39 +601,45 @@ const openModal = (onConfirm) => {
   document.body.style.overflow = 'hidden';
 };
 
-/** Close the modal */
 const closeModal = () => {
   const modal = $('modal-clear');
   if (!modal) return;
+  
+  /* BUG FIX: यहाँ Modal को 100% hide कर रहे हैं */
   modal.hidden = true;
-  modal.setAttribute('hidden', '');
+  modal.setAttribute('hidden', 'true');
+  modal.style.display = 'none';
   pendingModalAction = null;
   document.body.style.overflow = '';
+  
   const clearBtn = $('clear-all-btn');
   if (clearBtn) clearBtn.focus();
 };
 
-/** Initialize modal event listeners */
 const initModal = () => {
+  const modal      = $('modal-clear');
   const cancelBtn  = $('modal-cancel');
   const confirmBtn = $('modal-confirm');
   const backdrop   = $('modal-backdrop');
 
-  if (cancelBtn)  cancelBtn.addEventListener('click',  closeModal);
+  /* BUG FIX: पेज लोड होते ही Modal को छिपा कर रखना है */
+  if (modal) {
+    modal.hidden = true;
+    modal.setAttribute('hidden', 'true');
+    modal.style.display = 'none';
+  }
+
+  if (cancelBtn)  cancelBtn.addEventListener('click', closeModal);
   if (confirmBtn) confirmBtn.addEventListener('click', () => {
     if (typeof pendingModalAction === 'function') {
-      pendingModalAction();
+      try { pendingModalAction(); } catch (e) { console.error(e); }
     }
     closeModal();
   });
   if (backdrop) backdrop.addEventListener('click', closeModal);
 
-  /* ESC key closes modal */
   document.addEventListener('keydown', (e) => {
-    if (e.key === 'Escape') {
-      const modal = $('modal-clear');
-      if (modal && !modal.hidden) closeModal();
-    }
+    if (e.key === 'Escape' && modal && !modal.hidden) closeModal();
   });
 };
 
@@ -2786,18 +2791,10 @@ const setFooterYear = () => {
  * Boot sequence — runs when DOM is ready
  */
 const init = () => {
+  // 1. UI और Modal (इसे सबसे पहले लोड करें ताकि Cancel बटन कभी न अटके)
   try {
-    /* 1. Apply saved theme FIRST to avoid flash */
-    loadSavedTheme();
-    updateChartDefaults();
-
-    /* 2. Setup global Chart.js defaults */
-    Chart.defaults.responsive          = true;
-    Chart.defaults.maintainAspectRatio = false;
-
-    /* 3. Initialize all systems */
-    initTooltips();
     initModal();
+    initTooltips();
     initFAQ();
     initHeaderScroll();
     initMobileMenu();
@@ -2808,8 +2805,20 @@ const init = () => {
     initClearAll();
     initFooterLinks();
     setFooterYear();
+  } catch (err) { console.error("UI Init Error:", err); }
 
-    /* 4. Initialize calculator forms */
+  // 2. Charts (अगर चार्ट काम न करे तो भी ऐप चलता रहे)
+  try {
+    loadSavedTheme();
+    if (typeof Chart !== 'undefined') {
+      updateChartDefaults();
+      Chart.defaults.responsive = true;
+      Chart.defaults.maintainAspectRatio = false;
+    }
+  } catch (err) { console.warn("Chart Init Error:", err); }
+
+  // 3. Calculators चालू करें
+  try {
     initROICalc();
     initROASCalc();
     initCPACalc();
@@ -2817,35 +2826,23 @@ const init = () => {
     initCTRCalc();
     initBreakevenCalc();
     initMarginCalc();
-
-    /* 5. Restore saved session */
     restoreFromStorage();
+  } catch (err) { console.error("Calc Init Error:", err); }
 
-    /* 6. Theme toggle button */
+  // 4. बाकी के सारे फीचर्स
+  try {
     const themeBtn = $('theme-toggle');
     if (themeBtn) themeBtn.addEventListener('click', toggleTheme);
 
-    /* 7. Export PDF button */
     const exportBtn = $('export-btn');
     if (exportBtn) exportBtn.addEventListener('click', exportPDF);
 
-    /* 8. Initialize AOS scroll animations */
-    if (typeof AOS !== 'undefined') {
-      AOS.init({
-        duration:   600,
-        once:       true,
-        offset:     80,
-        easing:     'ease-out-quad',
-        delay:      0,
-      });
-    }
-
-    /* 9. Hide loader */
+    if (typeof AOS !== 'undefined') AOS.init({ duration: 600, once: true, offset: 80, easing: 'ease-out-quad', delay: 0 });
+    
     hideLoader();
 
-    /* 10. Keyboard shortcuts */
+    /* Keyboard shortcuts */
     document.addEventListener('keydown', (e) => {
-      /* Alt + number → switch calculator tab */
       if (e.altKey && !e.ctrlKey && !e.metaKey) {
         const map = { '1': 'roi', '2': 'roas', '3': 'cpa', '4': 'cpm', '5': 'ctr', '6': 'breakeven', '7': 'margin' };
         if (map[e.key]) {
@@ -2854,14 +2851,13 @@ const init = () => {
           document.getElementById('calculators')?.scrollIntoView({ behavior: 'smooth' });
         }
       }
-      /* Alt + E → Export PDF */
       if (e.altKey && e.key === 'e') {
         e.preventDefault();
         exportPDF();
       }
     });
 
-    /* 11. Smooth scroll for anchor links */
+    /* Smooth scroll for anchor links */
     document.querySelectorAll('a[href^="#"]').forEach((link) => {
       link.addEventListener('click', (e) => {
         const target = document.querySelector(link.getAttribute('href'));
@@ -2871,13 +2867,10 @@ const init = () => {
         }
       });
     });
-
-  } catch (err) {
-    /* Silently fail — app still usable without some features */
+  } catch (err) { 
+    console.error("Final Init Error:", err);
     const loader = $('loader');
-    if (loader) {
-      loader.classList.add('loader--hidden');
-    }
+    if (loader) loader.classList.add('loader--hidden');
   }
 };
 
