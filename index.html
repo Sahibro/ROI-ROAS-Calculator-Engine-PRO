@@ -1,1166 +1,1696 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    
-    <!-- SEO Meta Tags -->
-    <title>Marketing Analytics Calculator Pro - ROI, ROAS, CPA, CPM, CTR & More</title>
-    <meta name="description" content="Professional marketing calculator for ROI, ROAS, CPA, CPM, CTR, Break-even Analysis, and Profit Margin. Free online tool with instant results and beautiful charts.">
-    <meta name="keywords" content="ROI calculator, ROAS calculator, CPA calculator, CPM calculator, CTR calculator, marketing metrics, profit margin, break-even analysis">
-    <meta name="author" content="Marketing Analytics Pro">
-    <meta name="robots" content="index, follow">
-    <link rel="canonical" href="https://marketingcalculator.pro">
-    
-    <!-- Open Graph Meta Tags -->
-    <meta property="og:title" content="Marketing Analytics Calculator Pro - All-in-One Marketing Metrics">
-    <meta property="og:description" content="Calculate ROI, ROAS, CPA, CPM, CTR and more with beautiful visualizations and instant results.">
-    <meta property="og:image" content="assets/og-image.png">
-    <meta property="og:url" content="https://marketingcalculator.pro">
-    <meta property="og:type" content="website">
-    
-    <!-- Twitter Card Meta Tags -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Marketing Analytics Calculator Pro">
-    <meta name="twitter:description" content="Professional marketing metrics calculator with real-time charts">
-    <meta name="twitter:image" content="assets/twitter-card.png">
-    
-    <!-- Favicon -->
-    <link rel="icon" type="image/png" sizes="32x32" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📊</text></svg>">
-    
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-    
-    <!-- Font Awesome 6 Pro -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    
-    <!-- AOS Animation Library -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
-    
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="style.css">
-    
-    <!-- PWA Manifest -->
-    <link rel="manifest" href="manifest.json">
-    <meta name="theme-color" content="#6366F1">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+  <!-- SEO Meta Tags -->
+  <title>MarketIQ Pro — ROI · ROAS · CPA · CPM · CTR · Break-even · Profit Margin Calculator</title>
+  <meta name="description" content="Calculate ROI, ROAS, CPA, CPM, CTR, Break-even & Profit Margin — All in One Premium Marketing Analytics Tool. Free, Fast & Accurate." />
+  <meta name="keywords" content="ROI calculator, ROAS calculator, CPA calculator, CPM calculator, CTR calculator, break-even calculator, profit margin calculator, marketing analytics" />
+  <meta name="author" content="MarketIQ Pro" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://marketiqpro.app/" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="MarketIQ Pro — All-in-One Marketing Calculator" />
+  <meta property="og:description" content="Calculate ROI, ROAS, CPA, CPM, CTR, Break-even & Profit Margin instantly with beautiful charts." />
+  <meta property="og:url" content="https://marketiqpro.app/" />
+  <meta property="og:image" content="https://marketiqpro.app/og-image.png" />
+  <meta property="og:site_name" content="MarketIQ Pro" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="MarketIQ Pro — All-in-One Marketing Calculator" />
+  <meta name="twitter:description" content="Calculate ROI, ROAS, CPA, CPM, CTR, Break-even & Profit Margin instantly." />
+  <meta name="twitter:image" content="https://marketiqpro.app/og-image.png" />
+
+  <!-- PWA -->
+  <link rel="manifest" href="manifest.json" />
+  <meta name="theme-color" content="#6C63FF" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="apple-mobile-web-app-title" content="MarketIQ Pro" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📊</text></svg>" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome 6 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- AOS Animations -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUqROYtpOM2wFtnDH3z8zS/WBMXa7cFdBIRZsVNMVqA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Chart.js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js" integrity="sha512-ZwR1/gSZM3ai6vCdI+LVF1zSq/5HznD3oD+sCoJrzXJ+yKqtkYIyCURCCEqFubS/5ZmFmkUcQlMPwEsiDEFEA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <!-- jsPDF for export -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js" integrity="sha512-qZvrmS2ekKPF2mSznTQsxqPgnpkI4DNTlrdUmTzrDgektczlKNRRhy5X5AAOnx5S09ydFYWWNSfYEsCU1ZIez+g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
-    
-    <!-- Premium Loading Screen -->
-    <div id="loadingScreen" class="loading-screen">
-        <div class="loader">
-            <div class="loader-circle"></div>
-            <div class="loader-text">
-                <span>Marketing Analytics Pro</span>
-                <small>Loading Premium Tools...</small>
-            </div>
-        </div>
+
+  <!-- ════════════════════════════════════════
+       SKIP TO CONTENT (Accessibility)
+  ════════════════════════════════════════ -->
+  <a href="#main-content" class="skip-link" aria-label="Skip to main content">Skip to main content</a>
+
+  <!-- ════════════════════════════════════════
+       LOADER SCREEN
+  ════════════════════════════════════════ -->
+  <div id="loader" class="loader" role="status" aria-label="Loading MarketIQ Pro">
+    <div class="loader__inner">
+      <div class="loader__logo">
+        <i class="fa-solid fa-chart-line" aria-hidden="true"></i>
+      </div>
+      <div class="loader__bar">
+        <div class="loader__fill"></div>
+      </div>
+      <p class="loader__text">Initializing MarketIQ Pro...</p>
     </div>
+  </div>
 
-    <!-- Navigation Header -->
-    <header class="navbar" id="navbar">
-        <div class="container">
-            <div class="nav-wrapper">
-                <!-- Logo -->
-                <div class="nav-logo">
-                    <i class="fas fa-chart-line"></i>
-                    <span>Marketing<strong>Calculator</strong></span>
-                </div>
-                
-                <!-- Desktop Navigation -->
-                <nav class="nav-menu" id="navMenu">
-                    <a href="#calculators" class="nav-link">Calculators</a>
-                    <a href="#charts" class="nav-link">Analytics</a>
-                    <a href="#reports" class="nav-link">Reports</a>
-                    <a href="#about" class="nav-link">About</a>
-                </nav>
-                
-                <!-- Action Buttons -->
-                <div class="nav-actions">
-                    <button class="btn-icon" id="themeToggle" aria-label="Toggle Theme">
-                        <i class="fas fa-moon"></i>
-                    </button>
-                    <button class="btn-primary" id="exportAllBtn">
-                        <i class="fas fa-download"></i>
-                        <span>Export Report</span>
-                    </button>
-                    <button class="nav-toggle" id="navToggle" aria-label="Toggle Menu">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </button>
-                </div>
-            </div>
+  <!-- ════════════════════════════════════════
+       TOAST NOTIFICATIONS CONTAINER
+  ════════════════════════════════════════ -->
+  <div id="toast-container" class="toast-container" role="alert" aria-live="polite" aria-atomic="true"></div>
+
+  <!-- ════════════════════════════════════════
+       HEADER / NAVIGATION
+  ════════════════════════════════════════ -->
+  <header class="header" id="header" role="banner">
+    <nav class="nav container" aria-label="Main navigation">
+      <!-- Logo -->
+      <a href="#" class="nav__logo" aria-label="MarketIQ Pro Home">
+        <div class="nav__logo-icon" aria-hidden="true">
+          <i class="fa-solid fa-chart-line"></i>
         </div>
-    </header>
-
-    <!-- Hero Section -->
-    <section class="hero" id="hero">
-        <div class="hero-bg">
-            <div class="hero-gradient"></div>
-            <div class="hero-pattern"></div>
+        <div class="nav__logo-text">
+          <span class="nav__logo-name">MarketIQ</span>
+          <span class="nav__logo-badge">PRO</span>
         </div>
-        
-        <div class="container">
-            <div class="hero-content" data-aos="fade-up">
-                <div class="hero-badge">
-                    <i class="fas fa-star"></i>
-                    <span>Premium Marketing Suite</span>
-                </div>
-                
-                <h1 class="hero-title">
-                    Marketing Analytics
-                    <span class="gradient-text">Calculator Pro</span>
-                </h1>
-                
-                <p class="hero-description">
-                    Calculate ROI, ROAS, CPA, CPM, CTR, Break-even Point & Profit Margins with 
-                    professional-grade accuracy. Visualize your marketing performance with beautiful 
-                    interactive charts and export detailed reports.
-                </p>
-                
-                <div class="hero-stats">
-                    <div class="stat-card">
-                        <div class="stat-icon">
-                            <i class="fas fa-calculator"></i>
-                        </div>
-                        <div class="stat-content">
-                            <h3>7 Calculators</h3>
-                            <p>Premium Tools</p>
-                        </div>
-                    </div>
-                    
-                    <div class="stat-card">
-                        <div class="stat-icon">
-                            <i class="fas fa-chart-pie"></i>
-                        </div>
-                        <div class="stat-content">
-                            <h3>Real-time Charts</h3>
-                            <p>Visual Analytics</p>
-                        </div>
-                    </div>
-                    
-                    <div class="stat-card">
-                        <div class="stat-icon">
-                            <i class="fas fa-file-export"></i>
-                        </div>
-                        <div class="stat-content">
-                            <h3>PDF & Excel</h3>
-                            <p>Export Reports</p>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="hero-cta">
-                    <button class="btn-large btn-gradient" onclick="scrollToCalculators()">
-                        <i class="fas fa-rocket"></i>
-                        <span>Start Calculating</span>
-                    </button>
-                    <button class="btn-large btn-outline" onclick="showDemo()">
-                        <i class="fas fa-play-circle"></i>
-                        <span>Watch Demo</span>
-                    </button>
-                </div>
-            </div>
-        </div>
-        
-        <!-- Scroll Indicator -->
-        <div class="scroll-indicator">
-            <i class="fas fa-chevron-down"></i>
-        </div>
-    </section>
+      </a>
 
-    <!-- Quick Access Toolbar -->
-    <section class="quick-access" id="quickAccess">
-        <div class="container">
-            <div class="quick-access-wrapper">
-                <button class="quick-btn active" data-calculator="roi">
-                    <i class="fas fa-percentage"></i>
-                    <span>ROI</span>
-                </button>
-                <button class="quick-btn" data-calculator="roas">
-                    <i class="fas fa-chart-line"></i>
-                    <span>ROAS</span>
-                </button>
-                <button class="quick-btn" data-calculator="cpa">
-                    <i class="fas fa-user-plus"></i>
-                    <span>CPA</span>
-                </button>
-                <button class="quick-btn" data-calculator="cpm">
-                    <i class="fas fa-eye"></i>
-                    <span>CPM</span>
-                </button>
-                <button class="quick-btn" data-calculator="ctr">
-                    <i class="fas fa-mouse-pointer"></i>
-                    <span>CTR</span>
-                </button>
-                <button class="quick-btn" data-calculator="breakeven">
-                    <i class="fas fa-balance-scale"></i>
-                    <span>Break-even</span>
-                </button>
-                <button class="quick-btn" data-calculator="profit">
-                    <i class="fas fa-coins"></i>
-                    <span>Profit Margin</span>
-                </button>
-            </div>
-        </div>
-    </section>
+      <!-- Desktop Navigation Links -->
+      <ul class="nav__links" role="list">
+        <li><a href="#calculators" class="nav__link" aria-label="Go to Calculators">Calculators</a></li>
+        <li><a href="#dashboard" class="nav__link" aria-label="Go to Dashboard">Dashboard</a></li>
+        <li><a href="#guide" class="nav__link" aria-label="Go to Formula Guide">Formula Guide</a></li>
+      </ul>
 
-    <!-- Main Calculator Section -->
-    <section class="calculators" id="calculators">
-        <div class="container">
-            
-            <!-- Section Header -->
-            <div class="section-header" data-aos="fade-up">
-                <h2 class="section-title">Premium Calculator Suite</h2>
-                <p class="section-subtitle">Professional-grade marketing analytics tools with real-time calculations</p>
-            </div>
-
-            <!-- Calculator Grid -->
-            <div class="calculator-grid">
-                
-                <!-- ROI Calculator Card -->
-                <div class="calculator-card" id="roiCalculator" data-aos="fade-up" data-aos-delay="100">
-                    <div class="card-header">
-                        <div class="card-icon roi-icon">
-                            <i class="fas fa-percentage"></i>
-                        </div>
-                        <div class="card-title">
-                            <h3>ROI Calculator</h3>
-                            <p>Return on Investment Analysis</p>
-                        </div>
-                        <div class="card-badge">
-                            <span class="badge-popular">Most Used</span>
-                        </div>
-                    </div>
-                    
-                    <div class="card-body">
-                        <div class="input-group">
-                            <label for="roiInvestment">
-                                <i class="fas fa-wallet"></i>
-                                Initial Investment
-                                <span class="tooltip" data-tip="Total amount invested">
-                                    <i class="fas fa-info-circle"></i>
-                                </span>
-                            </label>
-                            <div class="input-wrapper">
-                                <span class="input-prefix">$</span>
-                                <input type="number" id="roiInvestment" min="0" step="0.01" placeholder="10,000.00" class="input-field">
-                                <button class="input-clear" onclick="clearInput('roiInvestment')">
-                                    <i class="fas fa-times"></i>
-                                </button>
-                            </div>
-                            <span class="input-error" id="roiInvestmentError"></span>
-                        </div>
-                        
-                        <div class="input-group">
-                            <label for="roiReturn">
-                                <i class="fas fa-hand-holding-dollar"></i>
-                                Final Return
-                                <span class="tooltip" data-tip="Total amount received back">
-                                    <i class="fas fa-info-circle"></i>
-                                </span>
-                            </label>
-                            <div class="input-wrapper">
-                                <span class="input-prefix">$</span>
-                                <input type="number" id="roiReturn" min="0" step="0.01" placeholder="15,000.00" class="input-field">
-                                <button class="input-clear" onclick="clearInput('roiReturn')">
-                                    <i class="fas fa-times"></i>
-                                </button>
-                            </div>
-                            <span class="input-error" id="roiReturnError"></span>
-                        </div>
-                        
-                        <button class="btn-calculate" onclick="calculateROI()">
-                            <i class="fas fa-calculator"></i>
-                            <span>Calculate ROI</span>
-                        </button>
-                        
-                        <!-- Results Display -->
-                        <div class="results-panel" id="roiResults" style="display: none;">
-                            <div class="result-item">
-                                <span class="result-label">ROI Percentage</span>
-                                <span class="result-value" id="roiPercentage">0%</span>
-                            </div>
-                            <div class="result-item">
-                                <span class="result-label">Net Profit/Loss</span>
-                                <span class="result-value" id="roiProfit">$0</span>
-                            </div>
-                            <div class="result-chart">
-                                <canvas id="roiChart"></canvas>
-                            </div>
-                            <div class="result-actions">
-                                <button class="btn-sm btn-outline" onclick="saveROIResult()">
-                                    <i class="fas fa-save"></i> Save
-                                </button>
-                                <button class="btn-sm btn-outline" onclick="shareROIResult()">
-                                    <i class="fas fa-share"></i> Share
-                                </button>
-                                <button class="btn-sm btn-outline" onclick="exportROIPDF()">
-                                    <i class="fas fa-file-pdf"></i> PDF
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- ROAS Calculator Card -->
-                <div class="calculator-card" id="roasCalculator" data-aos="fade-up" data-aos-delay="200">
-                    <div class="card-header">
-                        <div class="card-icon roas-icon">
-                            <i class="fas fa-chart-line"></i>
-                        </div>
-                        <div class="card-title">
-                            <h3>ROAS Calculator</h3>
-                            <p>Return on Ad Spend Metrics</p>
-                        </div>
-                    </div>
-                    
-                    <div class="card-body">
-                        <div class="input-group">
-                            <label for="roasAdSpend">
-                                <i class="fas fa-ad"></i>
-                                Ad Spend Amount
-                                <span class="tooltip" data-tip="Total advertising cost">
-                                    <i class="fas fa-info-circle"></i>
-                                </span>
-                            </label>
-                            <div class="input-wrapper">
-                                <span class="input-prefix">$</span>
-                                <input type="number" id="roasAdSpend" min="0" step="0.01" placeholder="5,000.00" class="input-field">
-                                <button class="input-clear" onclick="clearInput('roasAdSpend')">
-                                    <i class="fas fa-times"></i>
-                                </button>
-                            </div>
-                            <span class="input-error" id="roasAdSpendError"></span>
-                        </div>
-                        
-                        <div class="input-group">
-                            <label for="roasRevenue">
-                                <i class="fas fa-dollar-sign"></i>
-                                Revenue from Ads
-                                <span class="tooltip" data-tip="Total revenue generated from ads">
-                                    <i class="fas fa-info-circle"></i>
-                                </span>
-                            </label>
-                            <div class="input-wrapper">
-                                <span class="input-prefix">$</span>
-                                <input type="number" id="roasRevenue" min="0" step="0.01" placeholder="20,000.00" class="input-field">
-                                <button class="input-clear" onclick="clearInput('roasRevenue')">
-                                    <i class="fas fa-times"></i>
-                                </button>
-                            </div>
-                            <span class="input-error" id="roasRevenueError"></span>
-                        </div>
-                        
-                        <button class="btn-calculate" onclick="calculateROAS()">
-                            <i class="fas fa-calculator"></i>
-                            <span>Calculate ROAS</span>
-                        </button>
-                        
-                        <!-- Results Display -->
-                        <div class="results-panel" id="roasResults" style="display: none;">
-                            <div class="result-item">
-                                <span class="result-label">ROAS Ratio</span>
-                                <span class="result-value" id="roasRatio">0:1</span>
-                            </div>
-                            <div class="result-item">
-                                <span class="result-label">Performance</span>
-                                <span class="result-value" id="roasPerformance">-</span>
-                            </div>
-                            <div class="result-chart">
-                                <canvas id="roasChart"></canvas>
-                            </div>
-                            <div class="result-actions">
-                                <button class="btn-sm btn-outline" onclick="saveROASResult()">
-                                    <i class="fas fa-save"></i> Save
-                                </button>
-                                <button class="btn-sm btn-outline" onclick="shareROASResult()">
-                                    <i class="fas fa-share"></i> Share
-                                </button>
-                                <button class="btn-sm btn-outline" onclick="exportROASPDF()">
-                                    <i class="fas fa-file-pdf"></i> PDF
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- CPA Calculator Card -->
-                <div class="calculator-card" id="cpaCalculator" data-aos="fade-up" data-aos-delay="300">
-                    <div class="card-header">
-                        <div class="card-icon cpa-icon">
-                            <i class="fas fa-user-plus"></i>
-                        </div>
-                        <div class="card-title">
-                            <h3>CPA Calculator</h3>
-                            <p>Cost Per Acquisition Analysis</p>
-                        </div>
-                    </div>
-                    
-                    <div class="card-body">
-                        <div class="input-group">
-                            <label for="cpaTotalCost">
-                                <i class="fas fa-money-bill-wave"></i>
-                                Total Marketing Cost
-                                <span class="tooltip" data-tip="Total amount spent on marketing">
-                                    <i class="fas fa-info-circle"></i>
-                                </span>
-                            </label>
-                            <div class="input-wrapper">
-                                <span class="input-prefix">$</span>
-                                <input type="number" id="cpaTotalCost" min="0" step="0.01" placeholder="10,000.00" class="input-field">
-                                <button class="input-clear" onclick="clearInput('cpaTotalCost')">
-                                    <i class="fas fa-times"></i>
-                                </button>
-                            </div>
-                            <span class="input-error" id="cpaTotalCostError"></span>
-                        </div>
-                        
-                        <div class="input-group">
-                            <label for="cpaConversions">
-                                <i class="fas fa-users"></i>
-                                Number of Conversions
-                                <span class="tooltip" data-tip="Total customers acquired">
-                                    <i class="fas fa-info-circle"></i>
-                                </span>
-                            </label>
-                            <div class="input-wrapper">
-                                <span class="input-prefix">#</span>
-                                <input type="number" id="cpaConversions" min="1" step="1" placeholder="100" class="input-field">
-                                <button class="input-clear" onclick="clearInput('cpaConversions')">
-                                    <i class="fas fa-times"></i>
-                                </button>
-                            </div>
-                            <span class="input-error" id="cpaConversionsError"></span>
-                        </div>
-                        
-                        <button class="btn-calculate" onclick="calculateCPA()">
-                            <i class="fas fa-calculator"></i>
-                            <span>Calculate CPA</span>
-                        </button>
-                        
-                        <!-- Results Display -->
-                        <div class="results-panel" id="cpaResults" style="display: none;">
-                            <div class="result-item">
-                                <span class="result-label">Cost Per Acquisition</span>
-                                <span class="result-value" id="cpaValue">$0</span>
-                            </div>
-                            <div class="result-item">
-                                <span class="result-label">Efficiency Score</span>
-                                <span class="result-value" id="cpaEfficiency">-</span>
-                            </div>
-                            <div class="result-chart">
-                                <canvas id="cpaChart"></canvas>
-                            </div>
-                            <div class="result-actions">
-                                <button class="btn-sm btn-outline" onclick="saveCPAResult()">
-                                    <i class="fas fa-save"></i> Save
-                                </button>
-                                <button class="btn-sm btn-outline" onclick="shareCPAResult()">
-                                    <i class="fas fa-share"></i> Share
-                                </button>
-                                <button class="btn-sm btn-outline" onclick="exportCPAPDF()">
-                                    <i class="fas fa-file-pdf"></i> PDF
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- CPM Calculator Card -->
-                <div class="calculator-card" id="cpmCalculator" data-aos="fade-up" data-aos-delay="400">
-                    <div class="card-header">
-                        <div class="card-icon cpm-icon">
-                            <i class="fas fa-eye"></i>
-                        </div>
-                        <div class="card-title">
-                            <h3>CPM Calculator</h3>
-                            <p>Cost Per Thousand Impressions</p>
-                        </div>
-                    </div>
-                    
-                    <div class="card-body">
-                        <div class="input-group">
-                            <label for="cpmCost">
-                                <i class="fas fa-tags"></i>
-                                Campaign Cost
-                                <span class="tooltip" data-tip="Total cost of the campaign">
-                                    <i class="fas fa-info-circle"></i>
-                                </span>
-                            </label>
-                            <div class="input-wrapper">
-                                <span class="input-prefix">$</span>
-                                <input type="number" id="cpmCost" min="0" step="0.01" placeholder="1,000.00" class="input-field">
-                                <button class="input-clear" onclick="clearInput('cpmCost')">
-                                    <i class="fas fa-times"></i>
-                                </button>
-                            </div>
-                            <span class="input-error" id="cpmCostError"></span>
-                        </div>
-                        
-                        <div class="input-group">
-                            <label for="cpmImpressions">
-                                <i class="fas fa-eye"></i>
-                                Total Impressions
-                                <span class="tooltip" data-tip="Number of times ad was shown">
-                                    <i class="fas fa-info-circle"></i>
-                                </span>
-                            </label>
-                            <div class="input-wrapper">
-                                <span class="input-prefix">#</span>
-                                <input type="number" id="cpmImpressions" min="1" step="1" placeholder="500000" class="input-field">
-                                <button class="input-clear" onclick="clearInput('cpmImpressions')">
-                                    <i class="fas fa-times"></i>
-                                </button>
-                            </div>
-                            <span class="input-error" id="cpmImpressionsError"></span>
-                        </div>
-                        
-                        <button class="btn-calculate" onclick="calculateCPM()">
-                            <i class="fas fa-calculator"></i>
-                            <span>Calculate CPM</span>
-                        </button>
-                        
-                        <!-- Results Display -->
-                        <div class="results-panel" id="cpmResults" style="display: none;">
-                            <div class="result-item">
-                                <span class="result-label">CPM Rate</span>
-                                <span class="result-value" id="cpmRate">$0</span>
-                            </div>
-                            <div class="result-item">
-                                <span class="result-label">Reach Estimate</span>
-                                <span class="result-value" id="cpmReach">0</span>
-                            </div>
-                            <div class="result-chart">
-                                <canvas id="cpmChart"></canvas>
-                            </div>
-                            <div class="result-actions">
-                                <button class="btn-sm btn-outline" onclick="saveCPMResult()">
-                                    <i class="fas fa-save"></i> Save
-                                </button>
-                                <button class="btn-sm btn-outline" onclick="shareCPMResult()">
-                                    <i class="fas fa-share"></i> Share
-                                </button>
-                                <button class="btn-sm btn-outline" onclick="exportCPMPDF()">
-                                    <i class="fas fa-file-pdf"></i> PDF
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- CTR Calculator Card -->
-                <div class="calculator-card" id="ctrCalculator" data-aos="fade-up" data-aos-delay="500">
-                    <div class="card-header">
-                        <div class="card-icon ctr-icon">
-                            <i class="fas fa-mouse-pointer"></i>
-                        </div>
-                        <div class="card-title">
-                            <h3>CTR Calculator</h3>
-                            <p>Click-Through Rate Analysis</p>
-                        </div>
-                    </div>
-                    
-                    <div class="card-body">
-                        <div class="input-group">
-                            <label for="ctrClicks">
-                                <i class="fas fa-hand-pointer"></i>
-                                Total Clicks
-                                <span class="tooltip" data-tip="Number of clicks on ad">
-                                    <i class="fas fa-info-circle"></i>
-                                </span>
-                            </label>
-                            <div class="input-wrapper">
-                                <span class="input-prefix">#</span>
-                                <input type="number" id="ctrClicks" min="0" step="1" placeholder="5000" class="input-field">
-                                <button class="input-clear" onclick="clearInput('ctrClicks')">
-                                    <i class="fas fa-times"></i>
-                                </button>
-                            </div>
-                            <span class="input-error" id="ctrClicksError"></span>
-                        </div>
-                        
-                        <div class="input-group">
-                            <label for="ctrImpressions">
-                                <i class="fas fa-eye"></i>
-                                Total Impressions
-                                <span class="tooltip" data-tip="Number of times ad was shown">
-                                    <i class="fas fa-info-circle"></i>
-                                </span>
-                            </label>
-                            <div class="input-wrapper">
-                                <span class="input-prefix">#</span>
-                                <input type="number" id="ctrImpressions" min="1" step="1" placeholder="100000" class="input-field">
-                                <button class="input-clear" onclick="clearInput('ctrImpressions')">
-                                    <i class="fas fa-times"></i>
-                                </button>
-                            </div>
-                            <span class="input-error" id="ctrImpressionsError"></span>
-                        </div>
-                        
-                        <button class="btn-calculate" onclick="calculateCTR()">
-                            <i class="fas fa-calculator"></i>
-                            <span>Calculate CTR</span>
-                        </button>
-                        
-                        <!-- Results Display -->
-                        <div class="results-panel" id="ctrResults" style="display: none;">
-                            <div class="result-item">
-                                <span class="result-label">Click-Through Rate</span>
-                                <span class="result-value" id="ctrRate">0%</span>
-                            </div>
-                            <div class="result-item">
-                                <span class="result-label">Performance Grade</span>
-                                <span class="result-value" id="ctrGrade">-</span>
-                            </div>
-                            <div class="result-chart">
-                                <canvas id="ctrChart"></canvas>
-                            </div>
-                            <div class="result-actions">
-                                <button class="btn-sm btn-outline" onclick="saveCTRResult()">
-                                    <i class="fas fa-save"></i> Save
-                                </button>
-                                <button class="btn-sm btn-outline" onclick="shareCTRResult()">
-                                    <i class="fas fa-share"></i> Share
-                                </button>
-                                <button class="btn-sm btn-outline" onclick="exportCTRPDF()">
-                                    <i class="fas fa-file-pdf"></i> PDF
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Break-even Calculator Card -->
-                <div class="calculator-card" id="breakevenCalculator" data-aos="fade-up" data-aos-delay="600">
-                    <div class="card-header">
-                        <div class="card-icon breakeven-icon">
-                            <i class="fas fa-balance-scale"></i>
-                        </div>
-                        <div class="card-title">
-                            <h3>Break-even Analysis</h3>
-                            <p>Find Your Break-even Point</p>
-                        </div>
-                    </div>
-                    
-                    <div class="card-body">
-                        <div class="input-group">
-                            <label for="beFixedCosts">
-                                <i class="fas fa-building"></i>
-                                Fixed Costs
-                                <span class="tooltip" data-tip="Rent, salaries, insurance, etc.">
-                                    <i class="fas fa-info-circle"></i>
-                                </span>
-                            </label>
-                            <div class="input-wrapper">
-                                <span class="input-prefix">$</span>
-                                <input type="number" id="beFixedCosts" min="0" step="0.01" placeholder="50,000.00" class="input-field">
-                                <button class="input-clear" onclick="clearInput('beFixedCosts')">
-                                    <i class="fas fa-times"></i>
-                                </button>
-                            </div>
-                            <span class="input-error" id="beFixedCostsError"></span>
-                        </div>
-                        
-                        <div class="input-group">
-                            <label for="beVariableCost">
-                                <i class="fas fa-box"></i>
-                                Variable Cost per Unit
-                                <span class="tooltip" data-tip="Materials, production costs per unit">
-                                    <i class="fas fa-info-circle"></i>
-                                </span>
-                            </label>
-                            <div class="input-wrapper">
-                                <span class="input-prefix">$</span>
-                                <input type="number" id="beVariableCost" min="0" step="0.01" placeholder="25.00" class="input-field">
-                                <button class="input-clear" onclick="clearInput('beVariableCost')">
-                                    <i class="fas fa-times"></i>
-                                </button>
-                            </div>
-                            <span class="input-error" id="beVariableCostError"></span>
-                        </div>
-                        
-                        <div class="input-group">
-                            <label for="beUnitPrice">
-                                <i class="fas fa-tag"></i>
-                                Selling Price per Unit
-                                <span class="tooltip" data-tip="Price you sell each unit for">
-                                    <i class="fas fa-info-circle"></i>
-                                </span>
-                            </label>
-                            <div class="input-wrapper">
-                                <span class="input-prefix">$</span>
-                                <input type="number" id="beUnitPrice" min="0" step="0.01" placeholder="75.00" class="input-field">
-                                <button class="input-clear" onclick="clearInput('beUnitPrice')">
-                                    <i class="fas fa-times"></i>
-                                </button>
-                            </div>
-                            <span class="input-error" id="beUnitPriceError"></span>
-                        </div>
-                        
-                        <button class="btn-calculate" onclick="calculateBreakeven()">
-                            <i class="fas fa-calculator"></i>
-                            <span>Calculate Break-even</span>
-                        </button>
-                        
-                        <!-- Results Display -->
-                        <div class="results-panel" id="breakevenResults" style="display: none;">
-                            <div class="result-item">
-                                <span class="result-label">Break-even Units</span>
-                                <span class="result-value" id="beUnits">0</span>
-                            </div>
-                            <div class="result-item">
-                                <span class="result-label">Break-even Revenue</span>
-                                <span class="result-value" id="beRevenue">$0</span>
-                            </div>
-                            <div class="result-chart">
-                                <canvas id="breakevenChart"></canvas>
-                            </div>
-                            <div class="result-actions">
-                                <button class="btn-sm btn-outline" onclick="saveBreakevenResult()">
-                                    <i class="fas fa-save"></i> Save
-                                </button>
-                                <button class="btn-sm btn-outline" onclick="shareBreakevenResult()">
-                                    <i class="fas fa-share"></i> Share
-                                </button>
-                                <button class="btn-sm btn-outline" onclick="exportBreakevenPDF()">
-                                    <i class="fas fa-file-pdf"></i> PDF
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Profit Margin Calculator Card -->
-                <div class="calculator-card" id="profitCalculator" data-aos="fade-up" data-aos-delay="700">
-                    <div class="card-header">
-                        <div class="card-icon profit-icon">
-                            <i class="fas fa-coins"></i>
-                        </div>
-                        <div class="card-title">
-                            <h3>Profit Margin Calculator</h3>
-                            <p>Gross & Net Profit Analysis</p>
-                        </div>
-                    </div>
-                    
-                    <div class="card-body">
-                        <div class="input-group">
-                            <label for="pmRevenue">
-                                <i class="fas fa-cash-register"></i>
-                                Total Revenue
-                                <span class="tooltip" data-tip="Total sales/income">
-                                    <i class="fas fa-info-circle"></i>
-                                </span>
-                            </label>
-                            <div class="input-wrapper">
-                                <span class="input-prefix">$</span>
-                                <input type="number" id="pmRevenue" min="0" step="0.01" placeholder="100,000.00" class="input-field">
-                                <button class="input-clear" onclick="clearInput('pmRevenue')">
-                                    <i class="fas fa-times"></i>
-                                </button>
-                            </div>
-                            <span class="input-error" id="pmRevenueError"></span>
-                        </div>
-                        
-                        <div class="input-group">
-                            <label for="pmCosts">
-                                <i class="fas fa-receipt"></i>
-                                Total Costs
-                                <span class="tooltip" data-tip="All expenses and costs">
-                                    <i class="fas fa-info-circle"></i>
-                                </span>
-                            </label>
-                            <div class="input-wrapper">
-                                <span class="input-prefix">$</span>
-                                <input type="number" id="pmCosts" min="0" step="0.01" placeholder="65,000.00" class="input-field">
-                                <button class="input-clear" onclick="clearInput('pmCosts')">
-                                    <i class="fas fa-times"></i>
-                                </button>
-                            </div>
-                            <span class="input-error" id="pmCostsError"></span>
-                        </div>
-                        
-                        <button class="btn-calculate" onclick="calculateProfitMargin()">
-                            <i class="fas fa-calculator"></i>
-                            <span>Calculate Profit Margin</span>
-                        </button>
-                        
-                        <!-- Results Display -->
-                        <div class="results-panel" id="profitResults" style="display: none;">
-                            <div class="result-item">
-                                <span class="result-label">Profit Margin</span>
-                                <span class="result-value" id="pmMargin">0%</span>
-                            </div>
-                            <div class="result-item">
-                                <span class="result-label">Net Profit</span>
-                                <span class="result-value" id="pmProfit">$0</span>
-                            </div>
-                            <div class="result-chart">
-                                <canvas id="profitChart"></canvas>
-                            </div>
-                            <div class="result-actions">
-                                <button class="btn-sm btn-outline" onclick="saveProfitResult()">
-                                    <i class="fas fa-save"></i> Save
-                                </button>
-                                <button class="btn-sm btn-outline" onclick="shareProfitResult()">
-                                    <i class="fas fa-share"></i> Share
-                                </button>
-                                <button class="btn-sm btn-outline" onclick="exportProfitPDF()">
-                                    <i class="fas fa-file-pdf"></i> PDF
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-            </div>
-        </div>
-    </section>
-
-    <!-- Analytics Dashboard Section -->
-    <section class="analytics-dashboard" id="charts">
-        <div class="container">
-            <div class="section-header" data-aos="fade-up">
-                <h2 class="section-title">Analytics Dashboard</h2>
-                <p class="section-subtitle">Comprehensive overview of all your marketing metrics</p>
-            </div>
-            
-            <div class="dashboard-grid">
-                <!-- Summary Cards -->
-                <div class="summary-card" data-aos="fade-up" data-aos-delay="100">
-                    <div class="summary-icon roi-gradient">
-                        <i class="fas fa-chart-line"></i>
-                    </div>
-                    <div class="summary-content">
-                        <h4>Average ROI</h4>
-                        <p class="summary-value" id="avgROI">--</p>
-                        <span class="summary-trend positive">
-                            <i class="fas fa-arrow-up"></i> 12%
-                        </span>
-                    </div>
-                </div>
-                
-                <div class="summary-card" data-aos="fade-up" data-aos-delay="200">
-                    <div class="summary-icon roas-gradient">
-                        <i class="fas fa-ad"></i>
-                    </div>
-                    <div class="summary-content">
-                        <h4>Total ROAS</h4>
-                        <p class="summary-value" id="totalROAS">--</p>
-                        <span class="summary-trend positive">
-                            <i class="fas fa-arrow-up"></i> 8%
-                        </span>
-                    </div>
-                </div>
-                
-                <div class="summary-card" data-aos="fade-up" data-aos-delay="300">
-                    <div class="summary-icon cpa-gradient">
-                        <i class="fas fa-users"></i>
-                    </div>
-                    <div class="summary-content">
-                        <h4>Avg CPA</h4>
-                        <p class="summary-value" id="avgCPA">--</p>
-                        <span class="summary-trend negative">
-                            <i class="fas fa-arrow-down"></i> 5%
-                        </span>
-                    </div>
-                </div>
-                
-                <div class="summary-card" data-aos="fade-up" data-aos-delay="400">
-                    <div class="summary-icon ctr-gradient">
-                        <i class="fas fa-mouse-pointer"></i>
-                    </div>
-                    <div class="summary-content">
-                        <h4>Avg CTR</h4>
-                        <p class="summary-value" id="avgCTR">--</p>
-                        <span class="summary-trend positive">
-                            <i class="fas fa-arrow-up"></i> 15%
-                        </span>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- Combined Charts -->
-            <div class="chart-container" data-aos="fade-up" data-aos-delay="500">
-                <div class="chart-header">
-                    <h3>Performance Overview</h3>
-                    <div class="chart-controls">
-                        <button class="chart-btn active" data-chart="line">
-                            <i class="fas fa-chart-line"></i>
-                        </button>
-                        <button class="chart-btn" data-chart="bar">
-                            <i class="fas fa-chart-bar"></i>
-                        </button>
-                        <button class="chart-btn" data-chart="radar">
-                            <i class="fas fa-chart-area"></i>
-                        </button>
-                    </div>
-                </div>
-                <canvas id="performanceChart"></canvas>
-            </div>
-        </div>
-    </section>
-
-    <!-- Reports Section -->
-    <section class="reports-section" id="reports">
-        <div class="container">
-            <div class="section-header" data-aos="fade-up">
-                <h2 class="section-title">Export Reports</h2>
-                <p class="section-subtitle">Download comprehensive reports in multiple formats</p>
-            </div>
-            
-            <div class="reports-grid">
-                <div class="report-card" data-aos="fade-up" data-aos-delay="100">
-                    <div class="report-icon pdf-icon">
-                        <i class="fas fa-file-pdf"></i>
-                    </div>
-                    <h3>PDF Report</h3>
-                    <p>Professional PDF with charts and detailed analysis</p>
-                    <button class="btn-gradient" onclick="exportCompletePDF()">
-                        <i class="fas fa-download"></i>
-                        Download PDF
-                    </button>
-                </div>
-                
-                <div class="report-card" data-aos="fade-up" data-aos-delay="200">
-                    <div class="report-icon excel-icon">
-                        <i class="fas fa-file-excel"></i>
-                    </div>
-                    <h3>Excel Report</h3>
-                    <p>Detailed spreadsheet with all calculations and data</p>
-                    <button class="btn-gradient" onclick="exportCompleteExcel()">
-                        <i class="fas fa-download"></i>
-                        Download Excel
-                    </button>
-                </div>
-                
-                <div class="report-card" data-aos="fade-up" data-aos-delay="300">
-                    <div class="report-icon csv-icon">
-                        <i class="fas fa-file-csv"></i>
-                    </div>
-                    <h3>CSV Export</h3>
-                    <p>Raw data export for further analysis</p>
-                    <button class="btn-gradient" onclick="exportCSV()">
-                        <i class="fas fa-download"></i>
-                        Download CSV
-                    </button>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Features Section -->
-    <section class="features-section" id="features">
-        <div class="container">
-            <div class="section-header" data-aos="fade-up">
-                <h2 class="section-title">Premium Features</h2>
-                <p class="section-subtitle">Everything you need for professional marketing analytics</p>
-            </div>
-            
-            <div class="features-grid">
-                <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
-                    <div class="feature-icon">
-                        <i class="fas fa-bolt"></i>
-                    </div>
-                    <h3>Real-time Calculations</h3>
-                    <p>Instant results as you type with live preview</p>
-                </div>
-                
-                <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
-                    <div class="feature-icon">
-                        <i class="fas fa-chart-pie"></i>
-                    </div>
-                    <h3>Interactive Charts</h3>
-                    <p>Beautiful visualizations that tell your story</p>
-                </div>
-                
-                <div class="feature-card" data-aos="fade-up" data-aos-delay="300">
-                    <div class="feature-icon">
-                        <i class="fas fa-shield-alt"></i>
-                    </div>
-                    <h3>100% Accurate</h3>
-                    <p>Enterprise-grade calculation engine</p>
-                </div>
-                
-                <div class="feature-card" data-aos="fade-up" data-aos-delay="400">
-                    <div class="feature-icon">
-                        <i class="fas fa-mobile-alt"></i>
-                    </div>
-                    <h3>Mobile Responsive</h3>
-                    <p>Works perfectly on all devices</p>
-                </div>
-                
-                <div class="feature-card" data-aos="fade-up" data-aos-delay="500">
-                    <div class="feature-icon">
-                        <i class="fas fa-download"></i>
-                    </div>
-                    <h3>Export Options</h3>
-                    <p>PDF, Excel, CSV export formats</p>
-                </div>
-                
-                <div class="feature-card" data-aos="fade-up" data-aos-delay="600">
-                    <div class="feature-icon">
-                        <i class="fas fa-history"></i>
-                    </div>
-                    <h3>History Tracking</h3>
-                    <p>Save and compare past calculations</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-brand">
-                    <div class="footer-logo">
-                        <i class="fas fa-chart-line"></i>
-                        <span>Marketing Calculator Pro</span>
-                    </div>
-                    <p>Professional marketing analytics tools for data-driven decisions</p>
-                    <div class="social-links">
-                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
-                        <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
-                    </div>
-                </div>
-                
-                <div class="footer-links">
-                    <h4>Quick Links</h4>
-                    <ul>
-                        <li><a href="#calculators">Calculators</a></li>
-                        <li><a href="#charts">Analytics</a></li>
-                        <li><a href="#reports">Reports</a></li>
-                        <li><a href="#features">Features</a></li>
-                    </ul>
-                </div>
-                
-                <div class="footer-links">
-                    <h4>Resources</h4>
-                    <ul>
-                        <li><a href="#">Documentation</a></li>
-                        <li><a href="#">API</a></li>
-                        <li><a href="#">Blog</a></li>
-                        <li><a href="#">Support</a></li>
-                    </ul>
-                </div>
-                
-                <div class="footer-newsletter">
-                    <h4>Stay Updated</h4>
-                    <p>Get marketing tips and updates</p>
-                    <form class="newsletter-form" onsubmit="subscribeNewsletter(event)">
-                        <input type="email" placeholder="Enter your email" required>
-                        <button type="submit">
-                            <i class="fas fa-arrow-right"></i>
-                        </button>
-                    </form>
-                </div>
-            </div>
-            
-            <div class="footer-bottom">
-                <p>&copy; 2024 Marketing Calculator Pro. All rights reserved.</p>
-                <div class="footer-bottom-links">
-                    <a href="#">Privacy Policy</a>
-                    <a href="#">Terms of Service</a>
-                    <a href="#">Cookie Policy</a>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-    <!-- Back to Top Button -->
-    <button class="back-to-top" id="backToTop" aria-label="Back to Top">
-        <i class="fas fa-arrow-up"></i>
-    </button>
-
-    <!-- Success Toast Notification -->
-    <div class="toast" id="toast">
-        <div class="toast-icon">
-            <i class="fas fa-check-circle"></i>
-        </div>
-        <div class="toast-content">
-            <h4 class="toast-title">Success!</h4>
-            <p class="toast-message">Calculation completed successfully</p>
-        </div>
-        <button class="toast-close" onclick="hideToast()">
-            <i class="fas fa-times"></i>
+      <!-- Header Actions -->
+      <div class="nav__actions">
+        <!-- Theme Toggle -->
+        <button
+          id="theme-toggle"
+          class="btn-icon"
+          aria-label="Toggle dark/light theme"
+          title="Toggle Theme"
+          type="button"
+        >
+          <i class="fa-solid fa-moon" id="theme-icon" aria-hidden="true"></i>
         </button>
-    </div>
 
-    <!-- Share Modal -->
-    <div class="modal" id="shareModal">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h3>Share Results</h3>
-                <button class="modal-close" onclick="closeShareModal()">
-                    <i class="fas fa-times"></i>
-                </button>
-            </div>
-            <div class="modal-body">
-                <p>Share your calculation results:</p>
-                <div class="share-options">
-                    <button class="share-btn" onclick="shareViaEmail()">
-                        <i class="fas fa-envelope"></i>
-                        Email
-                    </button>
-                    <button class="share-btn" onclick="shareViaWhatsApp()">
-                        <i class="fab fa-whatsapp"></i>
-                        WhatsApp
-                    </button>
-                    <button class="share-btn" onclick="shareViaLinkedIn()">
-                        <i class="fab fa-linkedin"></i>
-                        LinkedIn
-                    </button>
-                    <button class="share-btn" onclick="copyShareLink()">
-                        <i class="fas fa-link"></i>
-                        Copy Link
-                    </button>
-                </div>
-            </div>
+        <!-- Clear All -->
+        <button
+          id="clear-all-btn"
+          class="btn btn--ghost btn--sm"
+          aria-label="Clear all calculator data"
+          title="Clear All Data"
+          type="button"
+        >
+          <i class="fa-solid fa-rotate-left" aria-hidden="true"></i>
+          <span>Reset All</span>
+        </button>
+
+        <!-- Export Button -->
+        <button
+          id="export-btn"
+          class="btn btn--primary btn--sm"
+          aria-label="Export results as PDF"
+          title="Export Results"
+          type="button"
+        >
+          <i class="fa-solid fa-file-export" aria-hidden="true"></i>
+          <span>Export PDF</span>
+        </button>
+
+        <!-- Mobile Hamburger -->
+        <button
+          id="hamburger"
+          class="hamburger"
+          aria-label="Toggle mobile menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+          type="button"
+        >
+          <span class="hamburger__line"></span>
+          <span class="hamburger__line"></span>
+          <span class="hamburger__line"></span>
+        </button>
+      </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="mobile-menu" role="navigation" aria-label="Mobile navigation" aria-hidden="true">
+      <ul class="mobile-menu__links" role="list">
+        <li><a href="#calculators" class="mobile-menu__link" tabindex="-1">📊 Calculators</a></li>
+        <li><a href="#dashboard" class="mobile-menu__link" tabindex="-1">📈 Dashboard</a></li>
+        <li><a href="#guide" class="mobile-menu__link" tabindex="-1">📚 Formula Guide</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- ════════════════════════════════════════
+       MAIN CONTENT
+  ════════════════════════════════════════ -->
+  <main id="main-content">
+
+    <!-- ───────────────────────────────────────
+         HERO SECTION
+    ─────────────────────────────────────── -->
+    <section class="hero" aria-labelledby="hero-heading">
+      <div class="hero__bg" aria-hidden="true">
+        <div class="hero__orb hero__orb--1"></div>
+        <div class="hero__orb hero__orb--2"></div>
+        <div class="hero__orb hero__orb--3"></div>
+        <div class="hero__grid"></div>
+      </div>
+
+      <div class="container hero__content">
+        <div class="hero__badge" data-aos="fade-down" data-aos-delay="100">
+          <i class="fa-solid fa-bolt" aria-hidden="true"></i>
+          <span>The #1 Marketing Calculator Suite</span>
         </div>
-    </div>
 
-    <!-- Demo Video Modal -->
-    <div class="modal" id="demoModal">
-        <div class="modal-content modal-large">
-            <div class="modal-header">
-                <h3>How to Use Marketing Calculator Pro</h3>
-                <button class="modal-close" onclick="closeDemoModal()">
-                    <i class="fas fa-times"></i>
-                </button>
-            </div>
-            <div class="modal-body">
-                <div class="demo-video">
-                    <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" 
-                            title="Demo Video" 
-                            frameborder="0" 
-                            allowfullscreen>
-                    </iframe>
-                </div>
-            </div>
+        <h1 id="hero-heading" class="hero__title" data-aos="fade-up" data-aos-delay="200">
+          Calculate Every
+          <span class="hero__title-gradient">Marketing Metric</span>
+          Instantly
+        </h1>
+
+        <p class="hero__subtitle" data-aos="fade-up" data-aos-delay="300">
+          ROI · ROAS · CPA · CPM · CTR · Break-even · Profit Margin<br />
+          Accurate formulas. Beautiful charts. Zero guesswork.
+        </p>
+
+        <!-- Metric Badges -->
+        <div class="hero__metrics" data-aos="fade-up" data-aos-delay="400" role="list" aria-label="Available calculators">
+          <span class="metric-badge metric-badge--roi" role="listitem">ROI</span>
+          <span class="metric-badge metric-badge--roas" role="listitem">ROAS</span>
+          <span class="metric-badge metric-badge--cpa" role="listitem">CPA</span>
+          <span class="metric-badge metric-badge--cpm" role="listitem">CPM</span>
+          <span class="metric-badge metric-badge--ctr" role="listitem">CTR</span>
+          <span class="metric-badge metric-badge--breakeven" role="listitem">Break-even</span>
+          <span class="metric-badge metric-badge--margin" role="listitem">Profit Margin</span>
         </div>
-    </div>
 
-    <!-- Scripts -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
-    <script src="script.js"></script>
-    
-    <!-- Initialize AOS -->
-    <script>
-        AOS.init({
-            duration: 1000,
-            once: true,
-            offset: 100
-        });
-    </script>
+        <!-- Hero CTA -->
+        <div class="hero__cta" data-aos="fade-up" data-aos-delay="500">
+          <a href="#calculators" class="btn btn--primary btn--lg" aria-label="Start calculating now">
+            <i class="fa-solid fa-calculator" aria-hidden="true"></i>
+            Start Calculating
+          </a>
+          <a href="#guide" class="btn btn--ghost btn--lg" aria-label="View formula guide">
+            <i class="fa-solid fa-book-open" aria-hidden="true"></i>
+            Formula Guide
+          </a>
+        </div>
+
+        <!-- Trust Indicators -->
+        <div class="hero__trust" data-aos="fade-up" data-aos-delay="600" aria-label="Trust indicators">
+          <div class="trust-item">
+            <i class="fa-solid fa-check-circle" aria-hidden="true"></i>
+            <span>100% Free</span>
+          </div>
+          <div class="trust-item">
+            <i class="fa-solid fa-check-circle" aria-hidden="true"></i>
+            <span>No Signup</span>
+          </div>
+          <div class="trust-item">
+            <i class="fa-solid fa-check-circle" aria-hidden="true"></i>
+            <span>Instant Results</span>
+          </div>
+          <div class="trust-item">
+            <i class="fa-solid fa-check-circle" aria-hidden="true"></i>
+            <span>Export to PDF</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ───────────────────────────────────────
+         QUICK STATS BANNER
+    ─────────────────────────────────────── -->
+    <section class="stats-banner" aria-label="Quick statistics">
+      <div class="container">
+        <div class="stats-banner__grid">
+          <div class="stats-banner__item" data-aos="fade-up" data-aos-delay="100">
+            <span class="stats-banner__number" data-count="7">0</span>
+            <span class="stats-banner__label">Calculators</span>
+          </div>
+          <div class="stats-banner__item" data-aos="fade-up" data-aos-delay="200">
+            <span class="stats-banner__number" data-count="100">0</span>
+            <span class="stats-banner__label">% Accurate</span>
+          </div>
+          <div class="stats-banner__item" data-aos="fade-up" data-aos-delay="300">
+            <span class="stats-banner__number" data-count="0">0</span>
+            <span class="stats-banner__label">Cost — Free Forever</span>
+          </div>
+          <div class="stats-banner__item" data-aos="fade-up" data-aos-delay="400">
+            <span class="stats-banner__number" data-count="5">0</span>
+            <span class="stats-banner__label">Chart Types</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ───────────────────────────────────────
+         CALCULATORS SECTION
+    ─────────────────────────────────────── -->
+    <section id="calculators" class="calculators-section" aria-labelledby="calc-heading">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <div class="section-tag">
+            <i class="fa-solid fa-calculator" aria-hidden="true"></i>
+            Calculators
+          </div>
+          <h2 id="calc-heading" class="section-title">
+            All-in-One <span class="text-gradient">Marketing Suite</span>
+          </h2>
+          <p class="section-subtitle">
+            Select any calculator below. Enter your numbers and get instant, accurate results with visual charts.
+          </p>
+        </div>
+
+        <!-- Calculator Tabs -->
+        <div class="calc-tabs" role="tablist" aria-label="Marketing calculators" data-aos="fade-up" data-aos-delay="100">
+          <button class="calc-tab calc-tab--active" role="tab" aria-selected="true" aria-controls="panel-roi" id="tab-roi" data-tab="roi" type="button">
+            <i class="fa-solid fa-arrow-trend-up" aria-hidden="true"></i>
+            <span>ROI</span>
+          </button>
+          <button class="calc-tab" role="tab" aria-selected="false" aria-controls="panel-roas" id="tab-roas" data-tab="roas" tabindex="-1" type="button">
+            <i class="fa-solid fa-bullseye" aria-hidden="true"></i>
+            <span>ROAS</span>
+          </button>
+          <button class="calc-tab" role="tab" aria-selected="false" aria-controls="panel-cpa" id="tab-cpa" data-tab="cpa" tabindex="-1" type="button">
+            <i class="fa-solid fa-user-check" aria-hidden="true"></i>
+            <span>CPA</span>
+          </button>
+          <button class="calc-tab" role="tab" aria-selected="false" aria-controls="panel-cpm" id="tab-cpm" data-tab="cpm" tabindex="-1" type="button">
+            <i class="fa-solid fa-eye" aria-hidden="true"></i>
+            <span>CPM</span>
+          </button>
+          <button class="calc-tab" role="tab" aria-selected="false" aria-controls="panel-ctr" id="tab-ctr" data-tab="ctr" tabindex="-1" type="button">
+            <i class="fa-solid fa-computer-mouse" aria-hidden="true"></i>
+            <span>CTR</span>
+          </button>
+          <button class="calc-tab" role="tab" aria-selected="false" aria-controls="panel-breakeven" id="tab-breakeven" data-tab="breakeven" tabindex="-1" type="button">
+            <i class="fa-solid fa-scale-balanced" aria-hidden="true"></i>
+            <span>Break-even</span>
+          </button>
+          <button class="calc-tab" role="tab" aria-selected="false" aria-controls="panel-margin" id="tab-margin" data-tab="margin" tabindex="-1" type="button">
+            <i class="fa-solid fa-percent" aria-hidden="true"></i>
+            <span>Profit Margin</span>
+          </button>
+        </div>
+
+        <!-- ═══════════ CALCULATOR PANELS ═══════════ -->
+
+        <!-- ── ROI PANEL ── -->
+        <div class="calc-panel calc-panel--active" id="panel-roi" role="tabpanel" aria-labelledby="tab-roi" data-aos="fade-up" data-aos-delay="150">
+          <div class="calc-panel__inner">
+            <!-- Left: Form -->
+            <div class="calc-form">
+              <div class="calc-form__header">
+                <div class="calc-icon calc-icon--roi" aria-hidden="true">
+                  <i class="fa-solid fa-arrow-trend-up"></i>
+                </div>
+                <div>
+                  <h3 class="calc-form__title">ROI Calculator</h3>
+                  <p class="calc-form__desc">Return on Investment — Measures the profitability of your investment.</p>
+                </div>
+              </div>
+
+              <form id="form-roi" novalidate aria-label="ROI Calculator form">
+                <div class="form-group">
+                  <label class="form-label" for="roi-revenue">
+                    Total Revenue Generated
+                    <span class="form-required" aria-label="required">*</span>
+                    <button type="button" class="tooltip-btn" aria-label="What is Total Revenue Generated?" data-tooltip="The total income/revenue earned from your campaign or investment.">
+                      <i class="fa-solid fa-circle-info" aria-hidden="true"></i>
+                    </button>
+                  </label>
+                  <div class="input-wrapper">
+                    <span class="input-prefix" aria-hidden="true">$</span>
+                    <input
+                      type="number"
+                      id="roi-revenue"
+                      name="roi-revenue"
+                      class="form-input"
+                      placeholder="e.g. 50000"
+                      min="0"
+                      max="999999999"
+                      step="0.01"
+                      aria-required="true"
+                      aria-describedby="roi-revenue-error"
+                      autocomplete="off"
+                    />
+                    <button type="button" class="input-clear" aria-label="Clear revenue field" tabindex="-1">
+                      <i class="fa-solid fa-xmark" aria-hidden="true"></i>
+                    </button>
+                  </div>
+                  <span class="form-error" id="roi-revenue-error" role="alert" aria-live="polite"></span>
+                </div>
+
+                <div class="form-group">
+                  <label class="form-label" for="roi-investment">
+                    Total Investment / Cost
+                    <span class="form-required" aria-label="required">*</span>
+                    <button type="button" class="tooltip-btn" aria-label="What is Total Investment?" data-tooltip="Total amount you spent or invested (ad spend, production, operational costs, etc.)">
+                      <i class="fa-solid fa-circle-info" aria-hidden="true"></i>
+                    </button>
+                  </label>
+                  <div class="input-wrapper">
+                    <span class="input-prefix" aria-hidden="true">$</span>
+                    <input
+                      type="number"
+                      id="roi-investment"
+                      name="roi-investment"
+                      class="form-input"
+                      placeholder="e.g. 20000"
+                      min="0.01"
+                      max="999999999"
+                      step="0.01"
+                      aria-required="true"
+                      aria-describedby="roi-investment-error"
+                      autocomplete="off"
+                    />
+                    <button type="button" class="input-clear" aria-label="Clear investment field" tabindex="-1">
+                      <i class="fa-solid fa-xmark" aria-hidden="true"></i>
+                    </button>
+                  </div>
+                  <span class="form-error" id="roi-investment-error" role="alert" aria-live="polite"></span>
+                </div>
+
+                <div class="form-actions">
+                  <button type="submit" class="btn btn--primary btn--full" id="roi-submit" aria-label="Calculate ROI">
+                    <i class="fa-solid fa-calculator" aria-hidden="true"></i>
+                    Calculate ROI
+                  </button>
+                  <button type="button" class="btn btn--ghost btn--full" id="roi-reset" aria-label="Reset ROI calculator">
+                    <i class="fa-solid fa-rotate-left" aria-hidden="true"></i>
+                    Reset
+                  </button>
+                </div>
+              </form>
+
+              <!-- Formula Display -->
+              <div class="formula-box" aria-label="ROI Formula">
+                <span class="formula-box__label">Formula Used:</span>
+                <code class="formula-box__code">ROI = ((Revenue − Investment) ÷ Investment) × 100</code>
+              </div>
+            </div>
+
+            <!-- Right: Results -->
+            <div class="calc-results" id="results-roi" aria-live="polite" aria-label="ROI calculation results">
+              <!-- Empty State -->
+              <div class="results-empty" id="roi-empty">
+                <div class="results-empty__icon" aria-hidden="true">📊</div>
+                <h4 class="results-empty__title">Enter your numbers</h4>
+                <p class="results-empty__desc">Fill in the fields on the left and click Calculate to see your ROI results with charts.</p>
+              </div>
+
+              <!-- Results (hidden until calculated) -->
+              <div class="results-content" id="roi-results-content" hidden aria-label="ROI results">
+                <div class="results-grid">
+                  <div class="result-card result-card--primary" data-aos="zoom-in">
+                    <div class="result-card__label">ROI</div>
+                    <div class="result-card__value" id="roi-result-value">0%</div>
+                    <div class="result-card__status" id="roi-result-status"></div>
+                  </div>
+                  <div class="result-card" data-aos="zoom-in" data-aos-delay="50">
+                    <div class="result-card__label">Net Profit</div>
+                    <div class="result-card__value result-card__value--sm" id="roi-net-profit">$0</div>
+                  </div>
+                  <div class="result-card" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="result-card__label">Revenue</div>
+                    <div class="result-card__value result-card__value--sm" id="roi-display-revenue">$0</div>
+                  </div>
+                  <div class="result-card" data-aos="zoom-in" data-aos-delay="150">
+                    <div class="result-card__label">Investment</div>
+                    <div class="result-card__value result-card__value--sm" id="roi-display-investment">$0</div>
+                  </div>
+                </div>
+
+                <!-- Interpretation -->
+                <div class="interpretation-box" id="roi-interpretation" role="status" aria-live="polite"></div>
+
+                <!-- Chart -->
+                <div class="chart-wrapper">
+                  <h4 class="chart-title">
+                    <i class="fa-solid fa-chart-pie" aria-hidden="true"></i>
+                    Revenue vs Investment Breakdown
+                  </h4>
+                  <div class="chart-container">
+                    <canvas id="chart-roi" aria-label="ROI Chart showing Revenue vs Investment" role="img"></canvas>
+                  </div>
+                </div>
+
+                <!-- Copy Button -->
+                <button type="button" class="btn btn--secondary btn--sm copy-result-btn" data-target="roi" aria-label="Copy ROI results to clipboard">
+                  <i class="fa-solid fa-copy" aria-hidden="true"></i>
+                  Copy Results
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ── ROAS PANEL ── -->
+        <div class="calc-panel" id="panel-roas" role="tabpanel" aria-labelledby="tab-roas" hidden>
+          <div class="calc-panel__inner">
+            <div class="calc-form">
+              <div class="calc-form__header">
+                <div class="calc-icon calc-icon--roas" aria-hidden="true">
+                  <i class="fa-solid fa-bullseye"></i>
+                </div>
+                <div>
+                  <h3 class="calc-form__title">ROAS Calculator</h3>
+                  <p class="calc-form__desc">Return on Ad Spend — How much revenue each ad dollar generates.</p>
+                </div>
+              </div>
+
+              <form id="form-roas" novalidate aria-label="ROAS Calculator form">
+                <div class="form-group">
+                  <label class="form-label" for="roas-revenue">
+                    Revenue from Ads
+                    <span class="form-required" aria-label="required">*</span>
+                    <button type="button" class="tooltip-btn" aria-label="What is Revenue from Ads?" data-tooltip="Total revenue generated directly from your advertising campaigns.">
+                      <i class="fa-solid fa-circle-info" aria-hidden="true"></i>
+                    </button>
+                  </label>
+                  <div class="input-wrapper">
+                    <span class="input-prefix" aria-hidden="true">$</span>
+                    <input type="number" id="roas-revenue" class="form-input" placeholder="e.g. 40000" min="0" step="0.01" aria-required="true" aria-describedby="roas-revenue-error" autocomplete="off" />
+                    <button type="button" class="input-clear" aria-label="Clear field" tabindex="-1"><i class="fa-solid fa-xmark" aria-hidden="true"></i></button>
+                  </div>
+                  <span class="form-error" id="roas-revenue-error" role="alert" aria-live="polite"></span>
+                </div>
+
+                <div class="form-group">
+                  <label class="form-label" for="roas-adspend">
+                    Total Ad Spend
+                    <span class="form-required" aria-label="required">*</span>
+                    <button type="button" class="tooltip-btn" aria-label="What is Total Ad Spend?" data-tooltip="The total amount spent on advertising (Google Ads, Meta Ads, etc.)">
+                      <i class="fa-solid fa-circle-info" aria-hidden="true"></i>
+                    </button>
+                  </label>
+                  <div class="input-wrapper">
+                    <span class="input-prefix" aria-hidden="true">$</span>
+                    <input type="number" id="roas-adspend" class="form-input" placeholder="e.g. 10000" min="0.01" step="0.01" aria-required="true" aria-describedby="roas-adspend-error" autocomplete="off" />
+                    <button type="button" class="input-clear" aria-label="Clear field" tabindex="-1"><i class="fa-solid fa-xmark" aria-hidden="true"></i></button>
+                  </div>
+                  <span class="form-error" id="roas-adspend-error" role="alert" aria-live="polite"></span>
+                </div>
+
+                <div class="form-actions">
+                  <button type="submit" class="btn btn--primary btn--full" id="roas-submit" aria-label="Calculate ROAS">
+                    <i class="fa-solid fa-calculator" aria-hidden="true"></i>
+                    Calculate ROAS
+                  </button>
+                  <button type="button" class="btn btn--ghost btn--full" id="roas-reset" aria-label="Reset ROAS calculator">
+                    <i class="fa-solid fa-rotate-left" aria-hidden="true"></i>
+                    Reset
+                  </button>
+                </div>
+              </form>
+
+              <div class="formula-box" aria-label="ROAS Formula">
+                <span class="formula-box__label">Formula Used:</span>
+                <code class="formula-box__code">ROAS = Revenue from Ads ÷ Total Ad Spend</code>
+              </div>
+            </div>
+
+            <div class="calc-results" id="results-roas" aria-live="polite">
+              <div class="results-empty" id="roas-empty">
+                <div class="results-empty__icon" aria-hidden="true">🎯</div>
+                <h4 class="results-empty__title">Enter your numbers</h4>
+                <p class="results-empty__desc">Fill in the fields and click Calculate to see your ROAS results.</p>
+              </div>
+              <div class="results-content" id="roas-results-content" hidden>
+                <div class="results-grid">
+                  <div class="result-card result-card--primary">
+                    <div class="result-card__label">ROAS</div>
+                    <div class="result-card__value" id="roas-result-value">0x</div>
+                    <div class="result-card__status" id="roas-result-status"></div>
+                  </div>
+                  <div class="result-card">
+                    <div class="result-card__label">Revenue</div>
+                    <div class="result-card__value result-card__value--sm" id="roas-display-revenue">$0</div>
+                  </div>
+                  <div class="result-card">
+                    <div class="result-card__label">Ad Spend</div>
+                    <div class="result-card__value result-card__value--sm" id="roas-display-spend">$0</div>
+                  </div>
+                  <div class="result-card">
+                    <div class="result-card__label">Revenue per $1 Spent</div>
+                    <div class="result-card__value result-card__value--sm" id="roas-per-dollar">$0</div>
+                  </div>
+                </div>
+                <div class="interpretation-box" id="roas-interpretation" role="status" aria-live="polite"></div>
+                <div class="chart-wrapper">
+                  <h4 class="chart-title">
+                    <i class="fa-solid fa-chart-bar" aria-hidden="true"></i>
+                    ROAS Performance Chart
+                  </h4>
+                  <div class="chart-container">
+                    <canvas id="chart-roas" aria-label="ROAS Chart" role="img"></canvas>
+                  </div>
+                </div>
+                <button type="button" class="btn btn--secondary btn--sm copy-result-btn" data-target="roas" aria-label="Copy ROAS results">
+                  <i class="fa-solid fa-copy" aria-hidden="true"></i>
+                  Copy Results
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ── CPA PANEL ── -->
+        <div class="calc-panel" id="panel-cpa" role="tabpanel" aria-labelledby="tab-cpa" hidden>
+          <div class="calc-panel__inner">
+            <div class="calc-form">
+              <div class="calc-form__header">
+                <div class="calc-icon calc-icon--cpa" aria-hidden="true">
+                  <i class="fa-solid fa-user-check"></i>
+                </div>
+                <div>
+                  <h3 class="calc-form__title">CPA Calculator</h3>
+                  <p class="calc-form__desc">Cost Per Acquisition — Average cost to acquire one customer/conversion.</p>
+                </div>
+              </div>
+
+              <form id="form-cpa" novalidate aria-label="CPA Calculator form">
+                <div class="form-group">
+                  <label class="form-label" for="cpa-spend">
+                    Total Ad Spend
+                    <span class="form-required" aria-label="required">*</span>
+                    <button type="button" class="tooltip-btn" aria-label="What is Total Ad Spend for CPA?" data-tooltip="Total amount spent on advertising to generate conversions.">
+                      <i class="fa-solid fa-circle-info" aria-hidden="true"></i>
+                    </button>
+                  </label>
+                  <div class="input-wrapper">
+                    <span class="input-prefix" aria-hidden="true">$</span>
+                    <input type="number" id="cpa-spend" class="form-input" placeholder="e.g. 5000" min="0.01" step="0.01" aria-required="true" aria-describedby="cpa-spend-error" autocomplete="off" />
+                    <button type="button" class="input-clear" aria-label="Clear field" tabindex="-1"><i class="fa-solid fa-xmark" aria-hidden="true"></i></button>
+                  </div>
+                  <span class="form-error" id="cpa-spend-error" role="alert" aria-live="polite"></span>
+                </div>
+
+                <div class="form-group">
+                  <label class="form-label" for="cpa-conversions">
+                    Number of Conversions
+                    <span class="form-required" aria-label="required">*</span>
+                    <button type="button" class="tooltip-btn" aria-label="What are Conversions?" data-tooltip="Total number of desired actions (purchases, signups, leads, downloads, etc.)">
+                      <i class="fa-solid fa-circle-info" aria-hidden="true"></i>
+                    </button>
+                  </label>
+                  <div class="input-wrapper">
+                    <span class="input-prefix" aria-hidden="true">#</span>
+                    <input type="number" id="cpa-conversions" class="form-input" placeholder="e.g. 250" min="1" step="1" aria-required="true" aria-describedby="cpa-conversions-error" autocomplete="off" />
+                    <button type="button" class="input-clear" aria-label="Clear field" tabindex="-1"><i class="fa-solid fa-xmark" aria-hidden="true"></i></button>
+                  </div>
+                  <span class="form-error" id="cpa-conversions-error" role="alert" aria-live="polite"></span>
+                </div>
+
+                <div class="form-actions">
+                  <button type="submit" class="btn btn--primary btn--full" id="cpa-submit" aria-label="Calculate CPA">
+                    <i class="fa-solid fa-calculator" aria-hidden="true"></i>
+                    Calculate CPA
+                  </button>
+                  <button type="button" class="btn btn--ghost btn--full" id="cpa-reset" aria-label="Reset CPA calculator">
+                    <i class="fa-solid fa-rotate-left" aria-hidden="true"></i>
+                    Reset
+                  </button>
+                </div>
+              </form>
+
+              <div class="formula-box" aria-label="CPA Formula">
+                <span class="formula-box__label">Formula Used:</span>
+                <code class="formula-box__code">CPA = Total Ad Spend ÷ Number of Conversions</code>
+              </div>
+            </div>
+
+            <div class="calc-results" id="results-cpa" aria-live="polite">
+              <div class="results-empty" id="cpa-empty">
+                <div class="results-empty__icon" aria-hidden="true">👤</div>
+                <h4 class="results-empty__title">Enter your numbers</h4>
+                <p class="results-empty__desc">Fill in the fields and click Calculate to see your CPA results.</p>
+              </div>
+              <div class="results-content" id="cpa-results-content" hidden>
+                <div class="results-grid">
+                  <div class="result-card result-card--primary">
+                    <div class="result-card__label">CPA</div>
+                    <div class="result-card__value" id="cpa-result-value">$0</div>
+                    <div class="result-card__status" id="cpa-result-status"></div>
+                  </div>
+                  <div class="result-card">
+                    <div class="result-card__label">Total Spend</div>
+                    <div class="result-card__value result-card__value--sm" id="cpa-display-spend">$0</div>
+                  </div>
+                  <div class="result-card">
+                    <div class="result-card__label">Conversions</div>
+                    <div class="result-card__value result-card__value--sm" id="cpa-display-conversions">0</div>
+                  </div>
+                  <div class="result-card">
+                    <div class="result-card__label">Conversions per $100</div>
+                    <div class="result-card__value result-card__value--sm" id="cpa-per-hundred">0</div>
+                  </div>
+                </div>
+                <div class="interpretation-box" id="cpa-interpretation" role="status" aria-live="polite"></div>
+                <div class="chart-wrapper">
+                  <h4 class="chart-title">
+                    <i class="fa-solid fa-chart-bar" aria-hidden="true"></i>
+                    CPA Efficiency Chart
+                  </h4>
+                  <div class="chart-container">
+                    <canvas id="chart-cpa" aria-label="CPA Chart" role="img"></canvas>
+                  </div>
+                </div>
+                <button type="button" class="btn btn--secondary btn--sm copy-result-btn" data-target="cpa" aria-label="Copy CPA results">
+                  <i class="fa-solid fa-copy" aria-hidden="true"></i>
+                  Copy Results
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ── CPM PANEL ── -->
+        <div class="calc-panel" id="panel-cpm" role="tabpanel" aria-labelledby="tab-cpm" hidden>
+          <div class="calc-panel__inner">
+            <div class="calc-form">
+              <div class="calc-form__header">
+                <div class="calc-icon calc-icon--cpm" aria-hidden="true">
+                  <i class="fa-solid fa-eye"></i>
+                </div>
+                <div>
+                  <h3 class="calc-form__title">CPM Calculator</h3>
+                  <p class="calc-form__desc">Cost Per Mille — Cost per 1,000 impressions for your ad campaign.</p>
+                </div>
+              </div>
+
+              <form id="form-cpm" novalidate aria-label="CPM Calculator form">
+                <div class="form-group">
+                  <label class="form-label" for="cpm-spend">
+                    Total Ad Spend
+                    <span class="form-required" aria-label="required">*</span>
+                    <button type="button" class="tooltip-btn" aria-label="What is Total Ad Spend for CPM?" data-tooltip="Total advertising budget spent on your campaign.">
+                      <i class="fa-solid fa-circle-info" aria-hidden="true"></i>
+                    </button>
+                  </label>
+                  <div class="input-wrapper">
+                    <span class="input-prefix" aria-hidden="true">$</span>
+                    <input type="number" id="cpm-spend" class="form-input" placeholder="e.g. 2000" min="0.01" step="0.01" aria-required="true" aria-describedby="cpm-spend-error" autocomplete="off" />
+                    <button type="button" class="input-clear" aria-label="Clear field" tabindex="-1"><i class="fa-solid fa-xmark" aria-hidden="true"></i></button>
+                  </div>
+                  <span class="form-error" id="cpm-spend-error" role="alert" aria-live="polite"></span>
+                </div>
+
+                <div class="form-group">
+                  <label class="form-label" for="cpm-impressions">
+                    Total Impressions
+                    <span class="form-required" aria-label="required">*</span>
+                    <button type="button" class="tooltip-btn" aria-label="What are Total Impressions?" data-tooltip="The total number of times your ad was displayed to users.">
+                      <i class="fa-solid fa-circle-info" aria-hidden="true"></i>
+                    </button>
+                  </label>
+                  <div class="input-wrapper">
+                    <span class="input-prefix" aria-hidden="true">#</span>
+                    <input type="number" id="cpm-impressions" class="form-input" placeholder="e.g. 500000" min="1" step="1" aria-required="true" aria-describedby="cpm-impressions-error" autocomplete="off" />
+                    <button type="button" class="input-clear" aria-label="Clear field" tabindex="-1"><i class="fa-solid fa-xmark" aria-hidden="true"></i></button>
+                  </div>
+                  <span class="form-error" id="cpm-impressions-error" role="alert" aria-live="polite"></span>
+                </div>
+
+                <div class="form-actions">
+                  <button type="submit" class="btn btn--primary btn--full" id="cpm-submit" aria-label="Calculate CPM">
+                    <i class="fa-solid fa-calculator" aria-hidden="true"></i>
+                    Calculate CPM
+                  </button>
+                  <button type="button" class="btn btn--ghost btn--full" id="cpm-reset" aria-label="Reset CPM calculator">
+                    <i class="fa-solid fa-rotate-left" aria-hidden="true"></i>
+                    Reset
+                  </button>
+                </div>
+              </form>
+
+              <div class="formula-box" aria-label="CPM Formula">
+                <span class="formula-box__label">Formula Used:</span>
+                <code class="formula-box__code">CPM = (Total Ad Spend ÷ Total Impressions) × 1,000</code>
+              </div>
+            </div>
+
+            <div class="calc-results" id="results-cpm" aria-live="polite">
+              <div class="results-empty" id="cpm-empty">
+                <div class="results-empty__icon" aria-hidden="true">👁️</div>
+                <h4 class="results-empty__title">Enter your numbers</h4>
+                <p class="results-empty__desc">Fill in the fields and click Calculate to see your CPM results.</p>
+              </div>
+              <div class="results-content" id="cpm-results-content" hidden>
+                <div class="results-grid">
+                  <div class="result-card result-card--primary">
+                    <div class="result-card__label">CPM</div>
+                    <div class="result-card__value" id="cpm-result-value">$0</div>
+                    <div class="result-card__status" id="cpm-result-status"></div>
+                  </div>
+                  <div class="result-card">
+                    <div class="result-card__label">Total Spend</div>
+                    <div class="result-card__value result-card__value--sm" id="cpm-display-spend">$0</div>
+                  </div>
+                  <div class="result-card">
+                    <div class="result-card__label">Total Impressions</div>
+                    <div class="result-card__value result-card__value--sm" id="cpm-display-impressions">0</div>
+                  </div>
+                  <div class="result-card">
+                    <div class="result-card__label">Cost per Impression</div>
+                    <div class="result-card__value result-card__value--sm" id="cpm-per-impression">$0</div>
+                  </div>
+                </div>
+                <div class="interpretation-box" id="cpm-interpretation" role="status" aria-live="polite"></div>
+                <div class="chart-wrapper">
+                  <h4 class="chart-title">
+                    <i class="fa-solid fa-chart-line" aria-hidden="true"></i>
+                    CPM vs Budget Distribution
+                  </h4>
+                  <div class="chart-container">
+                    <canvas id="chart-cpm" aria-label="CPM Chart" role="img"></canvas>
+                  </div>
+                </div>
+                <button type="button" class="btn btn--secondary btn--sm copy-result-btn" data-target="cpm" aria-label="Copy CPM results">
+                  <i class="fa-solid fa-copy" aria-hidden="true"></i>
+                  Copy Results
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ── CTR PANEL ── -->
+        <div class="calc-panel" id="panel-ctr" role="tabpanel" aria-labelledby="tab-ctr" hidden>
+          <div class="calc-panel__inner">
+            <div class="calc-form">
+              <div class="calc-form__header">
+                <div class="calc-icon calc-icon--ctr" aria-hidden="true">
+                  <i class="fa-solid fa-computer-mouse"></i>
+                </div>
+                <div>
+                  <h3 class="calc-form__title">CTR Calculator</h3>
+                  <p class="calc-form__desc">Click-Through Rate — Percentage of people who clicked your ad after seeing it.</p>
+                </div>
+              </div>
+
+              <form id="form-ctr" novalidate aria-label="CTR Calculator form">
+                <div class="form-group">
+                  <label class="form-label" for="ctr-clicks">
+                    Total Clicks
+                    <span class="form-required" aria-label="required">*</span>
+                    <button type="button" class="tooltip-btn" aria-label="What are Total Clicks?" data-tooltip="The total number of clicks your ad received from viewers.">
+                      <i class="fa-solid fa-circle-info" aria-hidden="true"></i>
+                    </button>
+                  </label>
+                  <div class="input-wrapper">
+                    <span class="input-prefix" aria-hidden="true">#</span>
+                    <input type="number" id="ctr-clicks" class="form-input" placeholder="e.g. 1500" min="0" step="1" aria-required="true" aria-describedby="ctr-clicks-error" autocomplete="off" />
+                    <button type="button" class="input-clear" aria-label="Clear field" tabindex="-1"><i class="fa-solid fa-xmark" aria-hidden="true"></i></button>
+                  </div>
+                  <span class="form-error" id="ctr-clicks-error" role="alert" aria-live="polite"></span>
+                </div>
+
+                <div class="form-group">
+                  <label class="form-label" for="ctr-impressions">
+                    Total Impressions
+                    <span class="form-required" aria-label="required">*</span>
+                    <button type="button" class="tooltip-btn" aria-label="What are Total Impressions for CTR?" data-tooltip="The total number of times your ad was shown to users.">
+                      <i class="fa-solid fa-circle-info" aria-hidden="true"></i>
+                    </button>
+                  </label>
+                  <div class="input-wrapper">
+                    <span class="input-prefix" aria-hidden="true">#</span>
+                    <input type="number" id="ctr-impressions" class="form-input" placeholder="e.g. 100000" min="1" step="1" aria-required="true" aria-describedby="ctr-impressions-error" autocomplete="off" />
+                    <button type="button" class="input-clear" aria-label="Clear field" tabindex="-1"><i class="fa-solid fa-xmark" aria-hidden="true"></i></button>
+                  </div>
+                  <span class="form-error" id="ctr-impressions-error" role="alert" aria-live="polite"></span>
+                </div>
+
+                <div class="form-actions">
+                  <button type="submit" class="btn btn--primary btn--full" id="ctr-submit" aria-label="Calculate CTR">
+                    <i class="fa-solid fa-calculator" aria-hidden="true"></i>
+                    Calculate CTR
+                  </button>
+                  <button type="button" class="btn btn--ghost btn--full" id="ctr-reset" aria-label="Reset CTR calculator">
+                    <i class="fa-solid fa-rotate-left" aria-hidden="true"></i>
+                    Reset
+                  </button>
+                </div>
+              </form>
+
+              <div class="formula-box" aria-label="CTR Formula">
+                <span class="formula-box__label">Formula Used:</span>
+                <code class="formula-box__code">CTR = (Total Clicks ÷ Total Impressions) × 100</code>
+              </div>
+            </div>
+
+            <div class="calc-results" id="results-ctr" aria-live="polite">
+              <div class="results-empty" id="ctr-empty">
+                <div class="results-empty__icon" aria-hidden="true">🖱️</div>
+                <h4 class="results-empty__title">Enter your numbers</h4>
+                <p class="results-empty__desc">Fill in the fields and click Calculate to see your CTR results.</p>
+              </div>
+              <div class="results-content" id="ctr-results-content" hidden>
+                <div class="results-grid">
+                  <div class="result-card result-card--primary">
+                    <div class="result-card__label">CTR</div>
+                    <div class="result-card__value" id="ctr-result-value">0%</div>
+                    <div class="result-card__status" id="ctr-result-status"></div>
+                  </div>
+                  <div class="result-card">
+                    <div class="result-card__label">Total Clicks</div>
+                    <div class="result-card__value result-card__value--sm" id="ctr-display-clicks">0</div>
+                  </div>
+                  <div class="result-card">
+                    <div class="result-card__label">Total Impressions</div>
+                    <div class="result-card__value result-card__value--sm" id="ctr-display-impressions">0</div>
+                  </div>
+                  <div class="result-card">
+                    <div class="result-card__label">Non-Clicks</div>
+                    <div class="result-card__value result-card__value--sm" id="ctr-non-clicks">0</div>
+                  </div>
+                </div>
+                <div class="interpretation-box" id="ctr-interpretation" role="status" aria-live="polite"></div>
+                <div class="chart-wrapper">
+                  <h4 class="chart-title">
+                    <i class="fa-solid fa-chart-pie" aria-hidden="true"></i>
+                    Clicks vs Impressions Breakdown
+                  </h4>
+                  <div class="chart-container">
+                    <canvas id="chart-ctr" aria-label="CTR Chart" role="img"></canvas>
+                  </div>
+                </div>
+                <button type="button" class="btn btn--secondary btn--sm copy-result-btn" data-target="ctr" aria-label="Copy CTR results">
+                  <i class="fa-solid fa-copy" aria-hidden="true"></i>
+                  Copy Results
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ── BREAK-EVEN PANEL ── -->
+        <div class="calc-panel" id="panel-breakeven" role="tabpanel" aria-labelledby="tab-breakeven" hidden>
+          <div class="calc-panel__inner">
+            <div class="calc-form">
+              <div class="calc-form__header">
+                <div class="calc-icon calc-icon--breakeven" aria-hidden="true">
+                  <i class="fa-solid fa-scale-balanced"></i>
+                </div>
+                <div>
+                  <h3 class="calc-form__title">Break-even Calculator</h3>
+                  <p class="calc-form__desc">Find how many units you need to sell to cover all your costs.</p>
+                </div>
+              </div>
+
+              <form id="form-breakeven" novalidate aria-label="Break-even Calculator form">
+                <div class="form-group">
+                  <label class="form-label" for="be-fixed-costs">
+                    Total Fixed Costs
+                    <span class="form-required" aria-label="required">*</span>
+                    <button type="button" class="tooltip-btn" aria-label="What are Fixed Costs?" data-tooltip="Costs that don't change with production volume: rent, salaries, software subscriptions, etc.">
+                      <i class="fa-solid fa-circle-info" aria-hidden="true"></i>
+                    </button>
+                  </label>
+                  <div class="input-wrapper">
+                    <span class="input-prefix" aria-hidden="true">$</span>
+                    <input type="number" id="be-fixed-costs" class="form-input" placeholder="e.g. 10000" min="0.01" step="0.01" aria-required="true" aria-describedby="be-fixed-costs-error" autocomplete="off" />
+                    <button type="button" class="input-clear" aria-label="Clear field" tabindex="-1"><i class="fa-solid fa-xmark" aria-hidden="true"></i></button>
+                  </div>
+                  <span class="form-error" id="be-fixed-costs-error" role="alert" aria-live="polite"></span>
+                </div>
+
+                <div class="form-group">
+                  <label class="form-label" for="be-selling-price">
+                    Selling Price Per Unit
+                    <span class="form-required" aria-label="required">*</span>
+                    <button type="button" class="tooltip-btn" aria-label="What is Selling Price Per Unit?" data-tooltip="The price at which you sell one unit of your product or service.">
+                      <i class="fa-solid fa-circle-info" aria-hidden="true"></i>
+                    </button>
+                  </label>
+                  <div class="input-wrapper">
+                    <span class="input-prefix" aria-hidden="true">$</span>
+                    <input type="number" id="be-selling-price" class="form-input" placeholder="e.g. 150" min="0.01" step="0.01" aria-required="true" aria-describedby="be-selling-price-error" autocomplete="off" />
+                    <button type="button" class="input-clear" aria-label="Clear field" tabindex="-1"><i class="fa-solid fa-xmark" aria-hidden="true"></i></button>
+                  </div>
+                  <span class="form-error" id="be-selling-price-error" role="alert" aria-live="polite"></span>
+                </div>
+
+                <div class="form-group">
+                  <label class="form-label" for="be-variable-cost">
+                    Variable Cost Per Unit
+                    <span class="form-required" aria-label="required">*</span>
+                    <button type="button" class="tooltip-btn" aria-label="What is Variable Cost Per Unit?" data-tooltip="Costs that change with each unit produced: materials, packaging, commission per sale, etc.">
+                      <i class="fa-solid fa-circle-info" aria-hidden="true"></i>
+                    </button>
+                  </label>
+                  <div class="input-wrapper">
+                    <span class="input-prefix" aria-hidden="true">$</span>
+                    <input type="number" id="be-variable-cost" class="form-input" placeholder="e.g. 60" min="0" step="0.01" aria-required="true" aria-describedby="be-variable-cost-error" autocomplete="off" />
+                    <button type="button" class="input-clear" aria-label="Clear field" tabindex="-1"><i class="fa-solid fa-xmark" aria-hidden="true"></i></button>
+                  </div>
+                  <span class="form-error" id="be-variable-cost-error" role="alert" aria-live="polite"></span>
+                </div>
+
+                <div class="form-actions">
+                  <button type="submit" class="btn btn--primary btn--full" id="be-submit" aria-label="Calculate Break-even">
+                    <i class="fa-solid fa-calculator" aria-hidden="true"></i>
+                    Calculate Break-even
+                  </button>
+                  <button type="button" class="btn btn--ghost btn--full" id="be-reset" aria-label="Reset Break-even calculator">
+                    <i class="fa-solid fa-rotate-left" aria-hidden="true"></i>
+                    Reset
+                  </button>
+                </div>
+              </form>
+
+              <div class="formula-box" aria-label="Break-even Formula">
+                <span class="formula-box__label">Formula Used:</span>
+                <code class="formula-box__code">Break-even = Fixed Costs ÷ (Selling Price − Variable Cost)</code>
+              </div>
+            </div>
+
+            <div class="calc-results" id="results-breakeven" aria-live="polite">
+              <div class="results-empty" id="breakeven-empty">
+                <div class="results-empty__icon" aria-hidden="true">⚖️</div>
+                <h4 class="results-empty__title">Enter your numbers</h4>
+                <p class="results-empty__desc">Fill in the fields and click Calculate to see your Break-even point.</p>
+              </div>
+              <div class="results-content" id="breakeven-results-content" hidden>
+                <div class="results-grid">
+                  <div class="result-card result-card--primary">
+                    <div class="result-card__label">Break-even Units</div>
+                    <div class="result-card__value" id="be-result-units">0</div>
+                    <div class="result-card__status" id="be-result-status"></div>
+                  </div>
+                  <div class="result-card">
+                    <div class="result-card__label">Break-even Revenue</div>
+                    <div class="result-card__value result-card__value--sm" id="be-result-revenue">$0</div>
+                  </div>
+                  <div class="result-card">
+                    <div class="result-card__label">Contribution Margin</div>
+                    <div class="result-card__value result-card__value--sm" id="be-contribution-margin">$0</div>
+                  </div>
+                  <div class="result-card">
+                    <div class="result-card__label">Margin Ratio</div>
+                    <div class="result-card__value result-card__value--sm" id="be-margin-ratio">0%</div>
+                  </div>
+                </div>
+                <div class="interpretation-box" id="be-interpretation" role="status" aria-live="polite"></div>
+                <div class="chart-wrapper">
+                  <h4 class="chart-title">
+                    <i class="fa-solid fa-chart-line" aria-hidden="true"></i>
+                    Break-even Analysis Chart
+                  </h4>
+                  <div class="chart-container chart-container--tall">
+                    <canvas id="chart-breakeven" aria-label="Break-even Analysis Chart" role="img"></canvas>
+                  </div>
+                </div>
+                <button type="button" class="btn btn--secondary btn--sm copy-result-btn" data-target="breakeven" aria-label="Copy Break-even results">
+                  <i class="fa-solid fa-copy" aria-hidden="true"></i>
+                  Copy Results
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ── PROFIT MARGIN PANEL ── -->
+        <div class="calc-panel" id="panel-margin" role="tabpanel" aria-labelledby="tab-margin" hidden>
+          <div class="calc-panel__inner">
+            <div class="calc-form">
+              <div class="calc-form__header">
+                <div class="calc-icon calc-icon--margin" aria-hidden="true">
+                  <i class="fa-solid fa-percent"></i>
+                </div>
+                <div>
+                  <h3 class="calc-form__title">Profit Margin Calculator</h3>
+                  <p class="calc-form__desc">Gross, Operating & Net Profit Margin — Know exactly how profitable you are.</p>
+                </div>
+              </div>
+
+              <form id="form-margin" novalidate aria-label="Profit Margin Calculator form">
+                <div class="form-group">
+                  <label class="form-label" for="margin-revenue">
+                    Total Revenue
+                    <span class="form-required" aria-label="required">*</span>
+                    <button type="button" class="tooltip-btn" aria-label="What is Total Revenue?" data-tooltip="Total income or sales generated before any costs are deducted.">
+                      <i class="fa-solid fa-circle-info" aria-hidden="true"></i>
+                    </button>
+                  </label>
+                  <div class="input-wrapper">
+                    <span class="input-prefix" aria-hidden="true">$</span>
+                    <input type="number" id="margin-revenue" class="form-input" placeholder="e.g. 100000" min="0.01" step="0.01" aria-required="true" aria-describedby="margin-revenue-error" autocomplete="off" />
+                    <button type="button" class="input-clear" aria-label="Clear field" tabindex="-1"><i class="fa-solid fa-xmark" aria-hidden="true"></i></button>
+                  </div>
+                  <span class="form-error" id="margin-revenue-error" role="alert" aria-live="polite"></span>
+                </div>
+
+                <div class="form-group">
+                  <label class="form-label" for="margin-cogs">
+                    Cost of Goods Sold (COGS)
+                    <span class="form-required" aria-label="required">*</span>
+                    <button type="button" class="tooltip-btn" aria-label="What is COGS?" data-tooltip="Direct costs attributable to the production of goods sold — materials, direct labor, etc.">
+                      <i class="fa-solid fa-circle-info" aria-hidden="true"></i>
+                    </button>
+                  </label>
+                  <div class="input-wrapper">
+                    <span class="input-prefix" aria-hidden="true">$</span>
+                    <input type="number" id="margin-cogs" class="form-input" placeholder="e.g. 40000" min="0" step="0.01" aria-required="true" aria-describedby="margin-cogs-error" autocomplete="off" />
+                    <button type="button" class="input-clear" aria-label="Clear field" tabindex="-1"><i class="fa-solid fa-xmark" aria-hidden="true"></i></button>
+                  </div>
+                  <span class="form-error" id="margin-cogs-error" role="alert" aria-live="polite"></span>
+                </div>
+
+                <div class="form-group">
+                  <label class="form-label" for="margin-operating">
+                    Operating Expenses
+                    <span class="form-required" aria-label="required">*</span>
+                    <button type="button" class="tooltip-btn" aria-label="What are Operating Expenses?" data-tooltip="Overhead costs: rent, salaries, marketing, admin, utilities, etc. (excluding COGS).">
+                      <i class="fa-solid fa-circle-info" aria-hidden="true"></i>
+                    </button>
+                  </label>
+                  <div class="input-wrapper">
+                    <span class="input-prefix" aria-hidden="true">$</span>
+                    <input type="number" id="margin-operating" class="form-input" placeholder="e.g. 25000" min="0" step="0.01" aria-required="true" aria-describedby="margin-operating-error" autocomplete="off" />
+                    <button type="button" class="input-clear" aria-label="Clear field" tabindex="-1"><i class="fa-solid fa-xmark" aria-hidden="true"></i></button>
+                  </div>
+                  <span class="form-error" id="margin-operating-error" role="alert" aria-live="polite"></span>
+                </div>
+
+                <div class="form-group">
+                  <label class="form-label" for="margin-taxes">
+                    Taxes & Interest (Optional)
+                    <button type="button" class="tooltip-btn" aria-label="What are Taxes and Interest?" data-tooltip="Tax paid and interest on loans. Enter 0 if not applicable or unknown.">
+                      <i class="fa-solid fa-circle-info" aria-hidden="true"></i>
+                    </button>
+                  </label>
+                  <div class="input-wrapper">
+                    <span class="input-prefix" aria-hidden="true">$</span>
+                    <input type="number" id="margin-taxes" class="form-input" placeholder="e.g. 5000 (optional)" min="0" step="0.01" aria-describedby="margin-taxes-hint" autocomplete="off" />
+                    <button type="button" class="input-clear" aria-label="Clear field" tabindex="-1"><i class="fa-solid fa-xmark" aria-hidden="true"></i></button>
+                  </div>
+                  <span class="form-helper" id="margin-taxes-hint">Leave empty or enter 0 if not applicable.</span>
+                </div>
+
+                <div class="form-actions">
+                  <button type="submit" class="btn btn--primary btn--full" id="margin-submit" aria-label="Calculate Profit Margin">
+                    <i class="fa-solid fa-calculator" aria-hidden="true"></i>
+                    Calculate Margins
+                  </button>
+                  <button type="button" class="btn btn--ghost btn--full" id="margin-reset" aria-label="Reset Profit Margin calculator">
+                    <i class="fa-solid fa-rotate-left" aria-hidden="true"></i>
+                    Reset
+                  </button>
+                </div>
+              </form>
+
+              <div class="formula-box" aria-label="Profit Margin Formula">
+                <span class="formula-box__label">Formulas Used:</span>
+                <code class="formula-box__code">Gross Margin = ((Revenue − COGS) ÷ Revenue) × 100<br />Operating Margin = ((Revenue − COGS − OpEx) ÷ Revenue) × 100<br />Net Margin = ((Revenue − All Costs) ÷ Revenue) × 100</code>
+              </div>
+            </div>
+
+            <div class="calc-results" id="results-margin" aria-live="polite">
+              <div class="results-empty" id="margin-empty">
+                <div class="results-empty__icon" aria-hidden="true">💰</div>
+                <h4 class="results-empty__title">Enter your numbers</h4>
+                <p class="results-empty__desc">Fill in the fields and click Calculate to see your Profit Margin breakdown.</p>
+              </div>
+              <div class="results-content" id="margin-results-content" hidden>
+                <div class="results-grid results-grid--3">
+                  <div class="result-card result-card--success">
+                    <div class="result-card__label">Gross Margin</div>
+                    <div class="result-card__value" id="margin-gross">0%</div>
+                    <div class="result-card__sublabel">Revenue − COGS</div>
+                  </div>
+                  <div class="result-card result-card--primary">
+                    <div class="result-card__label">Operating Margin</div>
+                    <div class="result-card__value" id="margin-operating-result">0%</div>
+                    <div class="result-card__sublabel">After Operating Costs</div>
+                  </div>
+                  <div class="result-card result-card--info">
+                    <div class="result-card__label">Net Profit Margin</div>
+                    <div class="result-card__value" id="margin-net">0%</div>
+                    <div class="result-card__sublabel">After All Costs</div>
+                  </div>
+                </div>
+                <div class="results-grid">
+                  <div class="result-card">
+                    <div class="result-card__label">Gross Profit</div>
+                    <div class="result-card__value result-card__value--sm" id="margin-gross-profit">$0</div>
+                  </div>
+                  <div class="result-card">
+                    <div class="result-card__label">Operating Profit</div>
+                    <div class="result-card__value result-card__value--sm" id="margin-op-profit">$0</div>
+                  </div>
+                  <div class="result-card">
+                    <div class="result-card__label">Net Profit</div>
+                    <div class="result-card__value result-card__value--sm" id="margin-net-profit">$0</div>
+                  </div>
+                  <div class="result-card">
+                    <div class="result-card__label">Total Costs</div>
+                    <div class="result-card__value result-card__value--sm" id="margin-total-costs">$0</div>
+                  </div>
+                </div>
+                <div class="interpretation-box" id="margin-interpretation" role="status" aria-live="polite"></div>
+                <div class="chart-wrapper">
+                  <h4 class="chart-title">
+                    <i class="fa-solid fa-chart-pie" aria-hidden="true"></i>
+                    Profit Margin Breakdown
+                  </h4>
+                  <div class="chart-container">
+                    <canvas id="chart-margin" aria-label="Profit Margin Chart" role="img"></canvas>
+                  </div>
+                </div>
+                <button type="button" class="btn btn--secondary btn--sm copy-result-btn" data-target="margin" aria-label="Copy Profit Margin results">
+                  <i class="fa-solid fa-copy" aria-hidden="true"></i>
+                  Copy Results
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div><!-- /container -->
+    </section>
+
+    <!-- ───────────────────────────────────────
+         SUMMARY DASHBOARD SECTION
+    ─────────────────────────────────────── -->
+    <section id="dashboard" class="dashboard-section" aria-labelledby="dashboard-heading">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <div class="section-tag">
+            <i class="fa-solid fa-chart-line" aria-hidden="true"></i>
+            Dashboard
+          </div>
+          <h2 id="dashboard-heading" class="section-title">
+            Your <span class="text-gradient">Results Dashboard</span>
+          </h2>
+          <p class="section-subtitle">All your calculated metrics in one place. Calculate metrics above to populate this dashboard.</p>
+        </div>
+
+        <!-- Dashboard Cards Grid -->
+        <div class="dashboard-grid" data-aos="fade-up" data-aos-delay="100" role="region" aria-label="Calculated metrics summary">
+          <!-- ROI -->
+          <div class="dashboard-card" id="dash-roi" aria-label="ROI summary card">
+            <div class="dashboard-card__icon dashboard-card__icon--roi" aria-hidden="true">
+              <i class="fa-solid fa-arrow-trend-up"></i>
+            </div>
+            <div class="dashboard-card__body">
+              <div class="dashboard-card__metric">ROI</div>
+              <div class="dashboard-card__value" id="dash-roi-value">—</div>
+              <div class="dashboard-card__sub">Return on Investment</div>
+            </div>
+            <div class="dashboard-card__status" id="dash-roi-status" aria-label="ROI status"></div>
+          </div>
+
+          <!-- ROAS -->
+          <div class="dashboard-card" id="dash-roas" aria-label="ROAS summary card">
+            <div class="dashboard-card__icon dashboard-card__icon--roas" aria-hidden="true">
+              <i class="fa-solid fa-bullseye"></i>
+            </div>
+            <div class="dashboard-card__body">
+              <div class="dashboard-card__metric">ROAS</div>
+              <div class="dashboard-card__value" id="dash-roas-value">—</div>
+              <div class="dashboard-card__sub">Return on Ad Spend</div>
+            </div>
+            <div class="dashboard-card__status" id="dash-roas-status" aria-label="ROAS status"></div>
+          </div>
+
+          <!-- CPA -->
+          <div class="dashboard-card" id="dash-cpa" aria-label="CPA summary card">
+            <div class="dashboard-card__icon dashboard-card__icon--cpa" aria-hidden="true">
+              <i class="fa-solid fa-user-check"></i>
+            </div>
+            <div class="dashboard-card__body">
+              <div class="dashboard-card__metric">CPA</div>
+              <div class="dashboard-card__value" id="dash-cpa-value">—</div>
+              <div class="dashboard-card__sub">Cost Per Acquisition</div>
+            </div>
+            <div class="dashboard-card__status" id="dash-cpa-status" aria-label="CPA status"></div>
+          </div>
+
+          <!-- CPM -->
+          <div class="dashboard-card" id="dash-cpm" aria-label="CPM summary card">
+            <div class="dashboard-card__icon dashboard-card__icon--cpm" aria-hidden="true">
+              <i class="fa-solid fa-eye"></i>
+            </div>
+            <div class="dashboard-card__body">
+              <div class="dashboard-card__metric">CPM</div>
+              <div class="dashboard-card__value" id="dash-cpm-value">—</div>
+              <div class="dashboard-card__sub">Cost Per 1,000 Impressions</div>
+            </div>
+            <div class="dashboard-card__status" id="dash-cpm-status" aria-label="CPM status"></div>
+          </div>
+
+          <!-- CTR -->
+          <div class="dashboard-card" id="dash-ctr" aria-label="CTR summary card">
+            <div class="dashboard-card__icon dashboard-card__icon--ctr" aria-hidden="true">
+              <i class="fa-solid fa-computer-mouse"></i>
+            </div>
+            <div class="dashboard-card__body">
+              <div class="dashboard-card__metric">CTR</div>
+              <div class="dashboard-card__value" id="dash-ctr-value">—</div>
+              <div class="dashboard-card__sub">Click-Through Rate</div>
+            </div>
+            <div class="dashboard-card__status" id="dash-ctr-status" aria-label="CTR status"></div>
+          </div>
+
+          <!-- Break-even -->
+          <div class="dashboard-card" id="dash-be" aria-label="Break-even summary card">
+            <div class="dashboard-card__icon dashboard-card__icon--breakeven" aria-hidden="true">
+              <i class="fa-solid fa-scale-balanced"></i>
+            </div>
+            <div class="dashboard-card__body">
+              <div class="dashboard-card__metric">Break-even</div>
+              <div class="dashboard-card__value" id="dash-be-value">—</div>
+              <div class="dashboard-card__sub">Units to Break Even</div>
+            </div>
+            <div class="dashboard-card__status" id="dash-be-status" aria-label="Break-even status"></div>
+          </div>
+
+          <!-- Profit Margin -->
+          <div class="dashboard-card" id="dash-margin" aria-label="Profit Margin summary card">
+            <div class="dashboard-card__icon dashboard-card__icon--margin" aria-hidden="true">
+              <i class="fa-solid fa-percent"></i>
+            </div>
+            <div class="dashboard-card__body">
+              <div class="dashboard-card__metric">Net Margin</div>
+              <div class="dashboard-card__value" id="dash-margin-value">—</div>
+              <div class="dashboard-card__sub">Net Profit Margin</div>
+            </div>
+            <div class="dashboard-card__status" id="dash-margin-status" aria-label="Margin status"></div>
+          </div>
+
+          <!-- Overall Score -->
+          <div class="dashboard-card dashboard-card--score" id="dash-score" aria-label="Overall marketing score card">
+            <div class="dashboard-card__icon dashboard-card__icon--score" aria-hidden="true">
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <div class="dashboard-card__body">
+              <div class="dashboard-card__metric">Campaign Score</div>
+              <div class="dashboard-card__value" id="dash-score-value">—</div>
+              <div class="dashboard-card__sub" id="dash-score-label">Calculate metrics to see score</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Dashboard Combined Chart -->
+        <div class="dashboard-chart-wrapper" data-aos="fade-up" data-aos-delay="200" id="dashboard-chart-section" hidden>
+          <h3 class="dashboard-chart-title">
+            <i class="fa-solid fa-chart-bar" aria-hidden="true"></i>
+            Combined Metrics Overview
+          </h3>
+          <div class="chart-container chart-container--dashboard">
+            <canvas id="chart-dashboard" aria-label="Combined Marketing Metrics Dashboard Chart" role="img"></canvas>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ───────────────────────────────────────
+         FORMULA GUIDE SECTION
+    ─────────────────────────────────────── -->
+    <section id="guide" class="guide-section" aria-labelledby="guide-heading">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <div class="section-tag">
+            <i class="fa-solid fa-book-open" aria-hidden="true"></i>
+            Formula Guide
+          </div>
+          <h2 id="guide-heading" class="section-title">
+            Complete <span class="text-gradient">Formula Reference</span>
+          </h2>
+          <p class="section-subtitle">Understand exactly how each metric is calculated and what the numbers mean for your business.</p>
+        </div>
+
+        <div class="guide-grid">
+
+          <!-- ROI Guide -->
+          <article class="guide-card" data-aos="fade-up" data-aos-delay="100" aria-label="ROI Formula Guide">
+            <div class="guide-card__header">
+              <div class="guide-card__icon guide-card__icon--roi" aria-hidden="true">
+                <i class="fa-solid fa-arrow-trend-up"></i>
+              </div>
+              <h3 class="guide-card__title">ROI — Return on Investment</h3>
+            </div>
+            <div class="guide-card__formula" aria-label="ROI Formula">
+              ROI = ((Revenue − Investment) ÷ Investment) × 100
+            </div>
+            <div class="guide-card__body">
+              <p>Measures the overall profitability of an investment relative to its cost.</p>
+              <div class="guide-benchmarks" aria-label="ROI Benchmarks">
+                <div class="benchmark benchmark--danger"><span>Below 0%</span><span>Loss — Losing Money</span></div>
+                <div class="benchmark benchmark--warning"><span>0% – 100%</span><span>Marginal — Low Profit</span></div>
+                <div class="benchmark benchmark--success"><span>100% – 300%</span><span>Good — Profitable</span></div>
+                <div class="benchmark benchmark--excellent"><span>300%+</span><span>Excellent — High Profit</span></div>
+              </div>
+            </div>
+          </article>
+
+          <!-- ROAS Guide -->
+          <article class="guide-card" data-aos="fade-up" data-aos-delay="150" aria-label="ROAS Formula Guide">
+            <div class="guide-card__header">
+              <div class="guide-card__icon guide-card__icon--roas" aria-hidden="true">
+                <i class="fa-solid fa-bullseye"></i>
+              </div>
+              <h3 class="guide-card__title">ROAS — Return on Ad Spend</h3>
+            </div>
+            <div class="guide-card__formula" aria-label="ROAS Formula">
+              ROAS = Revenue from Ads ÷ Total Ad Spend
+            </div>
+            <div class="guide-card__body">
+              <p>Shows how much revenue you earn for every dollar spent on advertising.</p>
+              <div class="guide-benchmarks" aria-label="ROAS Benchmarks">
+                <div class="benchmark benchmark--danger"><span>Below 1x</span><span>Loss — Negative Return</span></div>
+                <div class="benchmark benchmark--warning"><span>1x – 3x</span><span>Marginal — Barely Profitable</span></div>
+                <div class="benchmark benchmark--success"><span>3x – 5x</span><span>Good — Industry Average</span></div>
+                <div class="benchmark benchmark--excellent"><span>5x+</span><span>Excellent — High Efficiency</span></div>
+              </div>
+            </div>
+          </article>
+
+          <!-- CPA Guide -->
+          <article class="guide-card" data-aos="fade-up" data-aos-delay="200" aria-label="CPA Formula Guide">
+            <div class="guide-card__header">
+              <div class="guide-card__icon guide-card__icon--cpa" aria-hidden="true">
+                <i class="fa-solid fa-user-check"></i>
+              </div>
+              <h3 class="guide-card__title">CPA — Cost Per Acquisition</h3>
+            </div>
+            <div class="guide-card__formula" aria-label="CPA Formula">
+              CPA = Total Ad Spend ÷ Number of Conversions
+            </div>
+            <div class="guide-card__body">
+              <p>The average cost to acquire one customer, lead, or conversion. Lower is better.</p>
+              <div class="guide-benchmarks" aria-label="CPA Benchmarks">
+                <div class="benchmark benchmark--excellent"><span>Very Low</span><span>Excellent Efficiency</span></div>
+                <div class="benchmark benchmark--success"><span>Low</span><span>Good Campaign Performance</span></div>
+                <div class="benchmark benchmark--warning"><span>High</span><span>Needs Optimization</span></div>
+                <div class="benchmark benchmark--danger"><span>Very High</span><span>Campaign Not Profitable</span></div>
+              </div>
+            </div>
+          </article>
+
+          <!-- CPM Guide -->
+          <article class="guide-card" data-aos="fade-up" data-aos-delay="250" aria-label="CPM Formula Guide">
+            <div class="guide-card__header">
+              <div class="guide-card__icon guide-card__icon--cpm" aria-hidden="true">
+                <i class="fa-solid fa-eye"></i>
+              </div>
+              <h3 class="guide-card__title">CPM — Cost Per Mille</h3>
+            </div>
+            <div class="guide-card__formula" aria-label="CPM Formula">
+              CPM = (Total Ad Spend ÷ Total Impressions) × 1,000
+            </div>
+            <div class="guide-card__body">
+              <p>The cost for 1,000 ad impressions. Used to compare media buying efficiency.</p>
+              <div class="guide-benchmarks" aria-label="CPM Benchmarks">
+                <div class="benchmark benchmark--excellent"><span>$0 – $5</span><span>Excellent — Very Cheap Reach</span></div>
+                <div class="benchmark benchmark--success"><span>$5 – $15</span><span>Good — Average Display CPM</span></div>
+                <div class="benchmark benchmark--warning"><span>$15 – $30</span><span>Moderate — Social/Video</span></div>
+                <div class="benchmark benchmark--danger"><span>$30+</span><span>High — Premium Placement</span></div>
+              </div>
+            </div>
+          </article>
+
+          <!-- CTR Guide -->
+          <article class="guide-card" data-aos="fade-up" data-aos-delay="300" aria-label="CTR Formula Guide">
+            <div class="guide-card__header">
+              <div class="guide-card__icon guide-card__icon--ctr" aria-hidden="true">
+                <i class="fa-solid fa-computer-mouse"></i>
+              </div>
+              <h3 class="guide-card__title">CTR — Click-Through Rate</h3>
+            </div>
+            <div class="guide-card__formula" aria-label="CTR Formula">
+              CTR = (Total Clicks ÷ Total Impressions) × 100
+            </div>
+            <div class="guide-card__body">
+              <p>Percentage of people who clicked your ad. Higher CTR = more compelling ad creative.</p>
+              <div class="guide-benchmarks" aria-label="CTR Benchmarks">
+                <div class="benchmark benchmark--danger"><span>Below 0.5%</span><span>Poor — Ad Needs Work</span></div>
+                <div class="benchmark benchmark--warning"><span>0.5% – 1%</span><span>Average — Room to Improve</span></div>
+                <div class="benchmark benchmark--success"><span>1% – 3%</span><span>Good — Strong Creative</span></div>
+                <div class="benchmark benchmark--excellent"><span>3%+</span><span>Excellent — Top Performer</span></div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Break-even Guide -->
+          <article class="guide-card" data-aos="fade-up" data-aos-delay="350" aria-label="Break-even Formula Guide">
+            <div class="guide-card__header">
+              <div class="guide-card__icon guide-card__icon--breakeven" aria-hidden="true">
+                <i class="fa-solid fa-scale-balanced"></i>
+              </div>
+              <h3 class="guide-card__title">Break-even Analysis</h3>
+            </div>
+            <div class="guide-card__formula" aria-label="Break-even Formula">
+              Break-even = Fixed Costs ÷ (Selling Price − Variable Cost)
+            </div>
+            <div class="guide-card__body">
+              <p>The exact number of units you must sell to cover all costs — before making any profit.</p>
+              <div class="guide-benchmarks" aria-label="Break-even interpretation">
+                <div class="benchmark benchmark--success"><span>Low Units</span><span>Business Model is Strong</span></div>
+                <div class="benchmark benchmark--warning"><span>Medium Units</span><span>Viable but Watch Margins</span></div>
+                <div class="benchmark benchmark--danger"><span>High Units</span><span>High Risk — Review Pricing</span></div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Profit Margin Guide -->
+          <article class="guide-card guide-card--wide" data-aos="fade-up" data-aos-delay="400" aria-label="Profit Margin Formula Guide">
+            <div class="guide-card__header">
+              <div class="guide-card__icon guide-card__icon--margin" aria-hidden="true">
+                <i class="fa-solid fa-percent"></i>
+              </div>
+              <h3 class="guide-card__title">Profit Margins — Gross · Operating · Net</h3>
+            </div>
+            <div class="guide-card__formulas-multi" aria-label="Profit Margin Formulas">
+              <div class="guide-formula-item">
+                <strong>Gross Margin:</strong> ((Revenue − COGS) ÷ Revenue) × 100
+              </div>
+              <div class="guide-formula-item">
+                <strong>Operating Margin:</strong> ((Revenue − COGS − Operating Expenses) ÷ Revenue) × 100
+              </div>
+              <div class="guide-formula-item">
+                <strong>Net Margin:</strong> ((Revenue − All Costs) ÷ Revenue) × 100
+              </div>
+            </div>
+            <div class="guide-card__body">
+              <p>Three layers of profitability: Gross shows production efficiency, Operating shows operational efficiency, Net shows overall profitability.</p>
+              <div class="guide-benchmarks guide-benchmarks--4col" aria-label="Profit Margin Benchmarks">
+                <div class="benchmark benchmark--danger"><span>Below 5%</span><span>Poor</span></div>
+                <div class="benchmark benchmark--warning"><span>5% – 15%</span><span>Average</span></div>
+                <div class="benchmark benchmark--success"><span>15% – 30%</span><span>Good</span></div>
+                <div class="benchmark benchmark--excellent"><span>30%+</span><span>Excellent</span></div>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ───────────────────────────────────────
+         FAQ SECTION
+    ─────────────────────────────────────── -->
+    <section class="faq-section" aria-labelledby="faq-heading">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <div class="section-tag">
+            <i class="fa-solid fa-circle-question" aria-hidden="true"></i>
+            FAQ
+          </div>
+          <h2 id="faq-heading" class="section-title">
+            Frequently Asked <span class="text-gradient">Questions</span>
+          </h2>
+        </div>
+
+        <div class="faq-list" role="list" data-aos="fade-up" data-aos-delay="100">
+
+          <div class="faq-item" role="listitem">
+            <button class="faq-question" aria-expanded="false" aria-controls="faq-1" type="button">
+              <span>What is the difference between ROI and ROAS?</span>
+              <i class="fa-solid fa-chevron-down faq-icon" aria-hidden="true"></i>
+            </button>
+            <div class="faq-answer" id="faq-1" hidden>
+              <p>ROI (Return on Investment) considers <strong>all costs</strong> including production, overhead, and ad spend, giving you overall profitability. ROAS (Return on Ad Spend) only looks at <strong>revenue vs. ad spend</strong>, making it specific to advertising efficiency. A campaign can have a great ROAS but a poor ROI if other costs are high.</p>
+            </div>
+          </div>
+
+          <div class="faq-item" role="listitem">
+            <button class="faq-question" aria-expanded="false" aria-controls="faq-2" type="button">
+              <span>What is a good ROAS for Facebook/Google Ads?</span>
+              <i class="fa-solid fa-chevron-down faq-icon" aria-hidden="true"></i>
+            </button>
+            <div class="faq-answer" id="faq-2" hidden>
+              <p>Industry standard is <strong>4x ROAS</strong> as a baseline. For e-commerce, 3x–5x is common. For high-margin products, 2x–3x may be profitable. For low-margin products, you may need 6x–10x+. Always calculate based on your specific profit margins.</p>
+            </div>
+          </div>
+
+          <div class="faq-item" role="listitem">
+            <button class="faq-question" aria-expanded="false" aria-controls="faq-3" type="button">
+              <span>How do I reduce my CPA (Cost Per Acquisition)?</span>
+              <i class="fa-solid fa-chevron-down faq-icon" aria-hidden="true"></i>
+            </button>
+            <div class="faq-answer" id="faq-3" hidden>
+              <p>To reduce CPA: (1) Improve ad creative and copy to increase CTR, (2) Refine audience targeting to reach more qualified prospects, (3) Optimize landing pages for better conversion rates, (4) Use retargeting to reach warm audiences, (5) Test different bidding strategies, (6) Pause underperforming ad sets and scale winners.</p>
+            </div>
+          </div>
+
+          <div class="faq-item" role="listitem">
+            <button class="faq-question" aria-expanded="false" aria-controls="faq-4" type="button">
+              <span>Is this calculator free? Is my data stored anywhere?</span>
+              <i class="fa-solid fa-chevron-down faq-icon" aria-hidden="true"></i>
+            </button>
+            <div class="faq-answer" id="faq-4" hidden>
+              <p>Yes, MarketIQ Pro is 100% free with no signup required. All calculations happen <strong>entirely in your browser</strong> — no data is ever sent to any server. Your session data is only saved to your device's localStorage for convenience and is never shared with anyone.</p>
+            </div>
+          </div>
+
+          <div class="faq-item" role="listitem">
+            <button class="faq-question" aria-expanded="false" aria-controls="faq-5" type="button">
+              <span>Can I export my results?</span>
+              <i class="fa-solid fa-chevron-down faq-icon" aria-hidden="true"></i>
+            </button>
+            <div class="faq-answer" id="faq-5" hidden>
+              <p>Yes! Click the <strong>Export PDF</strong> button in the header to download a professional PDF report of all your calculated metrics. You can also copy individual results using the "Copy Results" button on each calculator panel.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ════════════════════════════════════════
+       FOOTER
+  ════════════════════════════════════════ -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer__inner">
+        <!-- Footer Logo -->
+        <div class="footer__brand">
+          <div class="footer__logo" aria-label="MarketIQ Pro">
+            <i class="fa-solid fa-chart-line" aria-hidden="true"></i>
+            <span>MarketIQ <strong>Pro</strong></span>
+          </div>
+          <p class="footer__tagline">The world's most accurate marketing metrics calculator. Free, fast, and privacy-first.</p>
+        </div>
+
+        <!-- Footer Metrics -->
+        <div class="footer__metrics" aria-label="Calculator list">
+          <h3 class="footer__heading">Calculators</h3>
+          <ul class="footer__list" role="list">
+            <li><button type="button" class="footer-tab-link" data-tab="roi" aria-label="Open ROI Calculator">ROI Calculator</button></li>
+            <li><button type="button" class="footer-tab-link" data-tab="roas" aria-label="Open ROAS Calculator">ROAS Calculator</button></li>
+            <li><button type="button" class="footer-tab-link" data-tab="cpa" aria-label="Open CPA Calculator">CPA Calculator</button></li>
+            <li><button type="button" class="footer-tab-link" data-tab="cpm" aria-label="Open CPM Calculator">CPM Calculator</button></li>
+            <li><button type="button" class="footer-tab-link" data-tab="ctr" aria-label="Open CTR Calculator">CTR Calculator</button></li>
+            <li><button type="button" class="footer-tab-link" data-tab="breakeven" aria-label="Open Break-even Calculator">Break-even Calculator</button></li>
+            <li><button type="button" class="footer-tab-link" data-tab="margin" aria-label="Open Profit Margin Calculator">Profit Margin Calculator</button></li>
+          </ul>
+        </div>
+
+        <!-- Footer Features -->
+        <div class="footer__features" aria-label="Features">
+          <h3 class="footer__heading">Features</h3>
+          <ul class="footer__list" role="list">
+            <li>✅ Real-time Calculations</li>
+            <li>✅ Interactive Charts</li>
+            <li>✅ PDF Export</li>
+            <li>✅ Dark / Light Theme</li>
+            <li>✅ Mobile Responsive</li>
+            <li>✅ Offline Ready (PWA)</li>
+            <li>✅ No Data Stored Online</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Footer Bottom -->
+      <div class="footer__bottom">
+        <p class="footer__copy">
+          &copy; <span id="footer-year"></span> MarketIQ Pro. Built for marketers worldwide. 100% Free &amp; Open Source.
+        </p>
+        <div class="footer__bottom-links">
+          <span class="footer__privacy">🔒 Your data stays on your device. Always.</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ════════════════════════════════════════
+       CLEAR ALL CONFIRMATION MODAL
+  ════════════════════════════════════════ -->
+  <div id="modal-clear" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-clear-title" aria-describedby="modal-clear-desc" hidden>
+    <div class="modal__backdrop" id="modal-backdrop"></div>
+    <div class="modal__content">
+      <div class="modal__icon modal__icon--danger" aria-hidden="true">
+        <i class="fa-solid fa-triangle-exclamation"></i>
+      </div>
+      <h3 class="modal__title" id="modal-clear-title">Reset All Calculators?</h3>
+      <p class="modal__desc" id="modal-clear-desc">This will clear all input values and results from every calculator. This action cannot be undone.</p>
+      <div class="modal__actions">
+        <button type="button" id="modal-cancel" class="btn btn--ghost" aria-label="Cancel reset">Cancel</button>
+        <button type="button" id="modal-confirm" class="btn btn--danger" aria-label="Confirm reset all calculators">Yes, Reset All</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ════════════════════════════════════════
+       TOOLTIP GLOBAL
+  ════════════════════════════════════════ -->
+  <div id="global-tooltip" class="global-tooltip" role="tooltip" aria-hidden="true"></div>
+
+  <!-- ════════════════════════════════════════
+       SCRIPTS
+  ════════════════════════════════════════ -->
+  <!-- AOS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0afc/o/TGgzfm6slcEIHE3HLdMiKZ31j0Zh/Hy5qw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <!-- Main Script -->
+  <script src="script.js"></script>
+
+  <!-- Service Worker Registration -->
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('sw.js').catch(() => {});
+      });
+    }
+  </script>
+
 </body>
 </html>
